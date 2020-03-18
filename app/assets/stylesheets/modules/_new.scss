@@ -1,0 +1,20 @@
+.conteiner {
+  .select {
+    display: flex;
+    justify-content: center;
+    .expense {
+      border: 1px solid gray;
+      padding: 10px;
+      padding-left: 40px;
+      padding-right: 40px;
+      background-color: lightskyblue;
+    }
+    .income {
+      border: 1px solid gray;
+      padding: 10px;
+      padding-left: 40px;
+      padding-right: 40px;
+      background-color: lightsalmon;
+    }
+  }
+}
