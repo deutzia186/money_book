@@ -8,22 +8,24 @@
         収入
     .input-box
       = form_with(model: @book, local: true) do |form|
-        = form.text_field :date, placeholder: "2020年3月1日（日）", class: 'date'
-        -# = collection_select :item, :region,Category.all,:id,:name,{include_blank: '---'} ,{class: "select-default2"}    
-        -# = f.collection_select :category, Category.all, :id, :category_name,, include_blank: true
-        = form.text_field :item, placeholder: "項目", class: 'item'
-        = form.text_field :price, placeholder: "金額", class: 'price'
-        = form.text_field :memo, placeholder: "メモ", class: 'memo'
-        = form.submit "登録"
-
-        
-        -# .date
-        -#   %input.date{type:"text", value: "2020年3月1日(日)"}
-        -# .item
-        -#   %input.item{type: "text", value: ""}
-        -# .price
-        -#   %input.price{type: "text", value: ""}
-        -# .memo
-        -#   %input.memo{type: "text", value: ""}
-        -# .image
-          
+        .date
+          .title
+            日付
+          = form.text_field :date, placeholder: "2020年3月1日（日）", class: 'date__detail'
+        .category
+          .title
+            項目
+        -# = f.collection_select :category_id, Item.all, :id, :category__detail
+        .price
+          .title
+            金額
+          = form.text_field :price, placeholder: "金額", class: 'price__detail'
+        .memo
+          .title
+            メモ
+          = form.text_field :memo, placeholder: "メモ", class: 'memo__detail'
+        .image
+          = form.file_field :image, class: 'image__file'
+          = form.hidden_field :image_cache
+        %button.register{type: "button"}
+          = form.submit "登録", class:'register__button'
