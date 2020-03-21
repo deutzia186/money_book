@@ -1,31 +1,10 @@
 .warapper
   = render "shared/header"
-  .conteiner
-    .select
-      .expense
-        支出
-      .income
-        収入
-    .input-box
-      = form_with(model: @book, local: true) do |form|
-        .date
-          .title
-            日付
-          = form.text_field :date, placeholder: "2020年3月1日（日）", class: 'date__detail'
-        .category
-          .title
-            項目
-        -# = f.collection_select :category_id, Item.all, :id, :category__detail
-        .price
-          .title
-            金額
-          = form.text_field :price, placeholder: "金額", class: 'price__detail'
-        .memo
-          .title
-            メモ
-          = form.text_field :memo, placeholder: "メモ", class: 'memo__detail'
-        .image
-          = form.file_field :image, class: 'image__file'
-          = form.hidden_field :image_cache
-        %button.register{type: "button"}
-          = form.submit "登録", class:'register__button'
+  %ul.tab-group
+    %li.tab.is-active 収入
+    %li.tab 支出
+  .panel-group
+    .panel.is-show
+      = render "shared/register"
+    .panel
+      = render "shared/register"

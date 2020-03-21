@@ -2,7 +2,8 @@
   .header__top
     .header__top__contents
       - if user_signed_in?
-        -# =link_to "マイページ",users_path,class: "mypage"
+        = link_to edit_user_path(current_user) do
+          = icon('fas', 'cog', class: 'icon')
         =link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'
 
       - else
@@ -11,6 +12,6 @@
   .header__title
     Money Book
   .header__bottom
-    =link_to "ホーム","#",class: "home"
-    =link_to "収支登録","#",class: "register"
+    =link_to "ホーム","/",class: "home"
+    =link_to "収支登録","/books/new",class: "register"
     =link_to "明細一覧","#",class: "statement"

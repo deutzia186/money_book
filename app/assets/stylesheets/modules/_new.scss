@@ -1,26 +1,31 @@
-.conteiner {
-  .select {
-    display: flex;
-    justify-content: center;
-    .expense {
-      border: 1px solid gray;
-      padding: 10px;
-      padding-left: 80px;
-      padding-right: 80px;
-      margin-top: 20px;
-      margin-right: 15px;
-      background-color: lightskyblue;
-    }
-    .income {
-      border: 1px solid gray;
-      padding: 10px;
-      padding-left: 80px;
-      padding-right: 80px;
-      margin-top: 20px;
-      margin-left: 15px;
-      background-color: lightsalmon;
-    }
+.tab-group {
+  display: flex;
+  justify-content: center;
+  .tab.is-active {
+    background: red;
+    color: #FFF;
   }
+  .tab {
+    width: 300px;
+    padding: 5px;
+    list-style: none;
+    border: solid 1px #CCC;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+.panel-group {
+  height: 100px;
+  border-top: none;
+  .panel {
+    display: none;
+  }
+  .panel.is-show {
+    display: block;
+  }
+}
+
+.conteiner {
   .input-box {
     display: flex;
     justify-content: center;
@@ -39,10 +44,10 @@
       }
       &__detail {
         text-align: center;
-        padding-left: 50px;
-        padding-right: 50px;
         border: 1px solid gray;
-        border-left:none;
+        border-left: none;
+        width: 300px;
+        color: gray;
       }
     }
     .category {
@@ -57,10 +62,9 @@
       }
       &__detail {
         text-align: center;
-        padding-left: 50px;
-        padding-right: 50px;
         border: 1px solid gray;
-        border-left:none;
+        border-left: none;
+        width: 300px;
       }
     }
 
@@ -76,10 +80,9 @@
       }
       &__detail {
         text-align: center;
-        padding-left: 50px;
-        padding-right: 50px;
         border: 1px solid gray;
-        border-left:none;
+        border-left: none;
+        width: 300px;
       }
     }
     .memo {
@@ -94,12 +97,33 @@
       }
       &__detail {
         text-align: center;
-        padding-left: 50px;
-        padding-right: 50px;
         border: 1px solid gray;
-        border-left:none;
+        border-left: none;
+        width: 300px;
       }
     }
+    .image {
+      display: flex;
+      margin-top: 10px;
+      .title {
+        border: 1px solid gray;
+        padding: 10px;
+        background-color: lightgray;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      &__label {
+        border: 1px solid gray;
+        border-left: none;
+        width: 300px;
+        line-height: 40px;
+        color: gray;
+      }
+      &__file {
+        display: none;
+      }
+    }
+
     .register {
       margin-top: 20px;
       background:rgb(250, 250, 110);
