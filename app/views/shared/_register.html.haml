@@ -8,7 +8,9 @@
       .category
         .title
           項目
-      -# = f.collection_select :category_id, Item.all, :id, :category__detail
+        -# = form.collection_select :item_id, Item.all, :id, :category__detail
+        = form.collection_select :item_id, Item.all.order(id: :ASC), :id, :name, prompt: "--", class: 'category__detail'
+
       .price
         .title
           金額
