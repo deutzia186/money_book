@@ -17,18 +17,19 @@
 .panel-group {
   height: 100px;
   border-top: none;
-  .panel {
-    display: none;
-  }
   .panel.is-show {
     display: block;
   }
+  .panel {
+    display: none;
+  }
+
 }
 
 .conteiner {
+  display: flex;
+  justify-content: center;
   .input-box {
-    display: flex;
-    justify-content: center;
     text-align: center;
     margin-top: 10px;
     .date {
@@ -47,7 +48,6 @@
         border: 1px solid gray;
         border-left: none;
         width: 300px;
-        color: gray;
       }
     }
     .category {
@@ -60,11 +60,12 @@
         padding-left: 50px;
         padding-right: 50px;
       }
-      &__detail {
-        text-align: center;
+      #book_item_id {
+        text-indent: 45%;
         border: 1px solid gray;
         border-left: none;
         width: 300px;
+        background-color: white;
       }
     }
 
@@ -78,7 +79,8 @@
         padding-left: 50px;
         padding-right: 50px;
       }
-      &__detail {
+      &__detail{
+        -webkit-box-shadow: 0 0 0px 1000px white inset;
         text-align: center;
         border: 1px solid gray;
         border-left: none;
@@ -96,6 +98,7 @@
         padding-right: 50px;
       }
       &__detail {
+        -webkit-box-shadow: 0 0 0px 1000px white inset;
         text-align: center;
         border: 1px solid gray;
         border-left: none;
@@ -112,15 +115,69 @@
         padding-left: 50px;
         padding-right: 50px;
       }
-      &__label {
+      #img_field-expense {
         border: 1px solid gray;
-        border-left: none;
+        padding: 0;
+        cursor: pointer;
         width: 300px;
-        line-height: 40px;
-        color: gray;
-      }
-      &__file {
+        transition: 0.3s ease-out;
+        border-left: none;
+      }       
+      #img_field-expense i {
+        font-size: 20px;
+        color: #aaa;
+        line-height: 50px;
+        transition: 0.3s ease-out;
+      }       
+      #img_field-expense i.add {
         display: none;
+        font-size: 50px;
+        position: absolute;
+        top: -90px;
+        right: 15px;
+      }       
+      #img_field-expense:hover {
+        background-color: lightskyblue;
+        transition: 0.3s ease-out;
+        opacity: 0.9;
+      }       
+      #img_field-expense:hover i {
+        transition: 0.3s ease-out;
+        display: block;
+        color: #fff;
+      }
+
+      #img_field-income {
+        border: 1px solid gray;
+        padding: 0;
+        cursor: pointer;
+        width: 300px;
+        transition: 0.3s ease-out;
+        border-left: none;
+      }
+       
+      #img_field-income i {
+        font-size: 20px;
+        color: #aaa;
+        line-height: 50px;
+        transition: 0.3s ease-out;
+      }      
+      #img_field-income i.add {
+        display: none;
+        font-size: 50px;
+        position: absolute;
+        top: -90px;
+        right: 15px;
+      }       
+      #img_field-income:hover {
+        background-color: lightskyblue;
+        transition: 0.3s ease-out;
+        opacity: 0.9;
+      }       
+      #img_field-income:hover i {
+        transition: 0.3s ease-out;
+        display: block;
+        color: #fff;
       }
     }
 

@@ -1,10 +1,74 @@
 .warapper
   = render "shared/header"
-  %ul.tab-group
-    %li.tab.is-active 収入
-    %li.tab 支出
+  .tab-group
+    .tab.is-active 支出
+    .tab 収入
   .panel-group
     .panel.is-show
-      = render "shared/register"
+      = form_with(model: @book, local: true) do |form|
+        .conteiner
+          .input-box
+            = form.hidden_field :select, value: 1
+            .date
+              .title
+                日付
+              = form.date_field :date, class: 'date__detail'
+            .category
+              .title
+                項目
+              = form.collection_select :item_id, Item.all.order(id: :ASC), :id, :name, prompt: "--", class: 'category__detail'
+            .price
+              .title
+                金額
+              = form.number_field :price, placeholder: "", class: 'price__detail'
+            .memo
+              .title
+                メモ
+              = form.text_field :memo, placeholder: "", class: 'memo__detail'
+            .image
+              .title
+                画像
+              .image-filed
+                #img_field-expense{onclick: "$('#file-expense').click()"}
+                  - if @book.image.url.present?
+                    = image_tag(@book.image.url)
+                  - else
+                    %i.fas.fa-image
+                = form.file_field :image, class: "image", style: "display:none;", id: "file-expense"
+                = form.hidden_field :image_cache
+            %button.register{type: "button"}
+              = form.submit "登録", class:'register__button'
     .panel
-      = render "shared/register"
+      = form_with(model: @book, local: true) do |form|
+        .conteiner
+          .input-box
+            = form.hidden_field :select, value: 2
+            .date
+              .title
+                日付
+              = form.date_field :date, class: 'date__detail'
+            .category
+              .title
+                項目
+              = form.collection_select :item_id, Item.all.order(id: :ASC), :id, :name, prompt: "--", class: 'category__detail'
+            .price
+              .title
+                金額
+              = form.number_field :price, placeholder: "", class: 'price__detail'
+            .memo
+              .title
+                メモ
+              = form.text_field :memo, placeholder: "", class: 'memo__detail'
+            .image
+              .title
+                画像
+              .image-filed
+                #img_field-income{onclick: "$('#file-income').click()"}
+                  - if @book.image.url.present?
+                    = image_tag(@book.image.url)
+                  - else
+                    %i.fas.fa-image
+                = form.file_field :image, class: "image", style: "display:none;", id: "file-income"
+                = form.hidden_field :image_cache
+            %button.register{type: "button"}
+              = form.submit "登録", class:'register__button'

@@ -13,8 +13,9 @@
 ActiveRecord::Schema.define(version: 2020_03_23_055720) do
 
   create_table "books", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.boolean "select"
+    t.integer "select"
     t.datetime "date", null: false
+    t.integer "item_id", null: false
     t.integer "price", null: false
     t.string "image"
     t.text "memo"
