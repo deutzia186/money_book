@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+.warapper {
+  height: 100%;
+  width: 100%;
+  .header{
+    height: 130px;
+    width: 100%;
+    background-color: rgb(146, 224, 73);
+    color: white;
+    &__top {
+      a{
+        text-decoration: none ;
+        line-height: 32px;
+        margin-right: 10px;
+        color: white;
+      }
+      &__contents {
+        text-decoration: none;
+        text-align: right;
+      }
+    }
+    &__title {
+      text-align: center;
+      font-size: 30px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    &__bottom {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      a{
+        text-decoration: none ;
+        color: white;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+    }
+  }
+  .contents {
+    &__left {
+      margin-left: 100px;
+      margin-top: 50px;
+      &__income {
+        display: flex;
+        &__title {
+          border: 1px solid gray;
+          padding: 10px;
+          background-color: lightgray;
+          padding-right: 50px;
+        }
+        &__price {
+          border: 1px solid gray;
+          border-left:none;
+          padding: 10px;
+          padding-left: 100px;
+          text-align: right;
+        }
+      }
+      &__expense {
+        display: flex;
+        &__title {
+          border: 1px solid gray;
+          padding: 10px;
+          background-color: lightgray;
+          border-top: none;
+          padding-right: 50px;
+        }
+        &__price {
+          border: 1px solid gray;
+          border-left:none;
+          padding: 10px;
+          padding-left: 100px;
+          text-align: right;
+          border-top: none;
+        }
+      }
+      &__balance {
+        display: flex;
+        &__title {
+          border: 1px solid gray;
+          padding: 10px;
+          background-color: lightgray;
+          border-top: none;
+          padding-right: 50px;
+        }
+        &__price {
+          border: 1px solid gray;
+          border-left:none;
+          padding: 10px;
+          padding-left: 100px;
+          text-align: right;
+          border-top: none;
+        }
+      }
+    }
+  }
+}
