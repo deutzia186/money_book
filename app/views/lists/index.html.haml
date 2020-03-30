@@ -1,0 +1,17 @@
+.warapper
+  = render "shared/header"
+  .list
+    .list__title
+      %p 日付
+      %p 科目
+      %p 項目
+      %p 価格
+      %p メモ
+      %p 画像
+      %p 編集
+      %p 削除
+  .list__contents
+    - @book.each do |book|
+      = book.date.strftime('%Y/%m/%d')
+      = book.select
+      = book.item_id
