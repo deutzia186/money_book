@@ -10,8 +10,18 @@
       %p 画像
       %p 編集
       %p 削除
-  .list__contents
-    - @book.each do |book|
-      = book.date.strftime('%Y/%m/%d')
-      = book.select
-      = book.item_id
+    .list__contents
+      - @book.each do |book|
+        .list__contents__date
+          = book.date.strftime('%Y/%m/%d')
+          .list__contents__select
+            = book.select
+          .list__contents__category
+            = book.category_id.name
+          .list__contents__price
+            = book.price
+          .list__contents__memo
+            = book.memo
+          .list__contents__image
+            -# = ling_to image_tag(src: book.image)
+            %img{src: book.image ,width:"50px",height:"30px"}

@@ -1,5 +1,6 @@
 class ListsController < ApplicationController
   def index
-    @book = Book.where(user_id: current_user.id).order("created_at ASC")
+    @category = Category.all
+    @book = Book.where(user_id: current_user.id).order("date ASC")
   end
 end

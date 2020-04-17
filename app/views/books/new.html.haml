@@ -8,7 +8,7 @@
       = form_with(model: @book, local: true) do |form|
         .conteiner
           .input-box
-            = form.hidden_field :select, value: 1
+            = form.hidden_field :select, value:"支出"
             .date
               .title
                 日付
@@ -16,7 +16,7 @@
             .category
               .title
                 項目
-              = form.collection_select :item_id, Item.all.order(id: :ASC), :id, :name, prompt: "--", class: 'category__detail'
+              = form.collection_select :category_id, Category.where(id: 1..15).order(id: :ASC), :id, :name, prompt: "--", class: 'category__detail'
             .price
               .title
                 金額
@@ -42,7 +42,7 @@
       = form_with(model: @book, local: true) do |form|
         .conteiner
           .input-box
-            = form.hidden_field :select, value: 2
+            = form.hidden_field :select, value: "収入"
             .date
               .title
                 日付
@@ -50,7 +50,7 @@
             .category
               .title
                 項目
-              = form.collection_select :item_id, Item.all.order(id: :ASC), :id, :name, prompt: "--", class: 'category__detail'
+              = form.collection_select :category_id, Category.where(id: 16..23).order(id: :ASC), :id, :name, prompt: "--", class: 'category__detail'
             .price
               .title
                 金額
