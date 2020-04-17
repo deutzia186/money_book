@@ -4,6 +4,27 @@
     justify-content: space-between;
     margin-left: 200px;
     margin-right: 200px;
+  }
+  &__contents {
+    &__date {
+      display: flex;
+      justify-content: space-between;
+      &__select {
+
+      }
+      &__category {
+
+      }
+      &__price {
+
+      }
+      &__memo {
+
+      }
+      &__image {
+        
+      }
+    }
 
   }
 

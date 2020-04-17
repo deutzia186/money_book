@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_23_055720) do
+ActiveRecord::Schema.define(version: 2020_03_18_052326) do
 
   create_table "books", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.integer "select"
+    t.string "select"
     t.datetime "date", null: false
-    t.integer "item_id", null: false
+    t.integer "category_id"
     t.integer "price", null: false
     t.string "image"
     t.text "memo"
@@ -23,13 +23,6 @@ ActiveRecord::Schema.define(version: 2020_03_23_055720) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_books_on_user_id"
-  end
-
-  create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.integer "item_id"
-    t.string "topic"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
