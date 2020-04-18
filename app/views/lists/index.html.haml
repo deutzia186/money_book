@@ -23,7 +23,5 @@
           .list__contents__memo
             = book.memo
           .list__contents__image
-            -# = link_to image_tag(src: book.image)
             - if book.image.present?
-              -# = link_to book.image.url, 'data-lightbox': book.image do
               %img{src: book.image ,width:"50px",height:"30px"}
