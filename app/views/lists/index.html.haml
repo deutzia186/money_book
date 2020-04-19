@@ -25,3 +25,7 @@
           .list__contents__image
             - if book.image.present?
               %img{src: book.image ,width:"50px",height:"30px"}
+          .list__contents__edit
+            = link_to "編集", edit_book_path(book), class: "btn"
+          .list__contents__destroy
+            = link_to '削除', book_path(book.id), method: :delete, class: "btn", data: { confirm: "削除してよろしいですか？", commit: "削除する", cancel: "やめる"}
