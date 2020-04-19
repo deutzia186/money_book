@@ -22,6 +22,12 @@ class BooksController < ApplicationController
     redirect_to new_book_path
   end
 
+  def destroy
+    @book =Book.find(params[:id])
+    @book.destroy
+    redirect_to lists_path
+  end
+
   private
   def book_params
     params.require(:book).permit(:select, :date, :category_id, :price, :image, :image_cache, :memo,).merge(user_id: current_user.id)
