@@ -1,5 +1,11 @@
 .warapper
   = render "shared/header"
+  .search
+    = search_form_for @q do |f|
+      = f.label :memo_cont, "name", class: "font-weight-bold"
+      = f.search_field :memo_cont, class: "form-control"
+      = f.submit "完了"
+
   .list
     .list__title
       %p 日付
@@ -29,3 +35,4 @@
             = link_to "編集", edit_book_path(book), class: "btn"
           .list__contents__destroy
             = link_to '削除', book_path(book.id), method: :delete, class: "btn", data: { confirm: "削除してよろしいですか？", commit: "削除する", cancel: "やめる"}
+    = paginate(@book)

@@ -1,3 +1,6 @@
+.search {
+  
+}
 .list {
   &__title {
     display: flex;
@@ -27,11 +30,12 @@
       &__edit {
 
       }
-      &__destroy {
-        
-      }
+      &__destroy {}
     }
 
+  }
+  .pagination {
+    text-align: center;
   }
 
 }
