@@ -1,0 +1,6 @@
+.warapper
+  = render 'shared/header'
+  - @searches.each do |search|
+    = search.date.strftime('%Y/%m/%d')
+    = search.memo
+

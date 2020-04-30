@@ -1,38 +1,75 @@
 .warapper
   = render "shared/header"
-  .search
-    = search_form_for @q do |f|
-      = f.label :memo_cont, "name", class: "font-weight-bold"
-      = f.search_field :memo_cont, class: "form-control"
-      = f.submit "完了"
+  .detail
+    .left-content
+      .search
+        .search__title
+          詳細検索
+        = search_form_for @q, url: search_lists_path do |f|
+          .search__field
+            .search__field__date
+              = f.label :date_gteq, "日付：", class: "search__field__date__label"
+              = f.date_field :date_gteq, class: 'search__field__date__detail'
+              〜
+              = f.date_field :date_lteq, class: 'search__field__date__detail'
+            .search__field__select
+              = f.label :select_eq, "科目：", class: "search__field__select__label"
+              = f.radio_button :select_eq, '', {:checked => true}
+              指定なし
+              = f.radio_button :select_eq, '支出'
+              支出
+              = f.radio_button :select_eq, '収入'
+              収入
+            .search__field__category
+              = f.label :select_eq, "項目：", class: "search__field__category__label"
+              = f.collection_select :category_id_eq, Category.all.order(id: :ASC), :id, :name, prompt: "--", class: 'category__detail'
+            .search__field__price
+              = f.label :price_gteq, "金額：", class: "search__field__price__label"
+              = f.search_field :price_gteq, placeholder: "¥ Min"
+              〜
+              = f.search_field :price_lteq, placeholder: "¥ Max"
+            .search__field__memo
+              = f.label :memo_cont, "メモ：", class: "search__field__memo__label"
+              = f.search_field :memo_cont
+            .search__field__submit
+              = f.submit "絞り込む", class: 'search__field__submit__detail'
 
-  .list
-    .list__title
-      %p 日付
-      %p 科目
-      %p 項目
-      %p 価格
-      %p メモ
-      %p 画像
-      %p 編集
-      %p 削除
-    .list__contents
-      - @book.each do |book|
-        .list__contents__date
-          = book.date.strftime('%Y/%m/%d')
-          .list__contents__select
-            = book.select
-          .list__contents__category
-            = book.category.name
-          .list__contents__price
-            = book.price
-          .list__contents__memo
-            = book.memo
-          .list__contents__image
-            - if book.image.present?
-              %img{src: book.image ,width:"50px",height:"30px"}
-          .list__contents__edit
-            = link_to "編集", edit_book_path(book), class: "btn"
-          .list__contents__destroy
-            = link_to '削除', book_path(book.id), method: :delete, class: "btn", data: { confirm: "削除してよろしいですか？", commit: "削除する", cancel: "やめる"}
-    = paginate(@book)
+    .list
+      .list__title
+        %table
+          %thead
+            %tr
+              %th 日付
+              %th 科目
+              %th 項目
+              %th 価格
+              %th メモ
+              %th 画像
+              %th 編集
+              %th 削除
+          %tbody
+            - @books.each do |book|
+              %tr
+                .date
+                  %td= book.date.strftime('%Y/%m/%d')
+                .select
+                  %td= book.select
+                .category
+                  %td= book.category.name
+                .price
+                  %td= book.price
+                .memo
+                  %td= book.memo
+                .image
+                  %td
+                    - if book.image.present?
+                      %img{src: book.image ,width:"50px",height:"30px"}
+                .edit
+                  %td
+                    = link_to edit_book_path(book), class: "btn" do
+                      = icon('fas', 'edit', class: 'icon')
+                .destroy
+                  %td
+                    = link_to book_path(book.id), method: :delete, class: "btn", data: { confirm: "削除してよろしいですか？", commit: "削除する", cancel: "やめる"} do
+                      = icon('fas', 'trash-alt', class: 'icon')
+        = paginate(@books)
