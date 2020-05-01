@@ -21,7 +21,7 @@
               = f.radio_button :select_eq, '収入'
               収入
             .search__field__category
-              = f.label :select_eq, "項目：", class: "search__field__category__label"
+              = f.label :category_id_eq, "項目：", class: "search__field__category__label"
               = f.collection_select :category_id_eq, Category.all.order(id: :ASC), :id, :name, prompt: "--", class: 'category__detail'
             .search__field__price
               = f.label :price_gteq, "金額：", class: "search__field__price__label"
