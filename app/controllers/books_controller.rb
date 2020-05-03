@@ -27,7 +27,8 @@ class BooksController < ApplicationController
     @book.destroy
     redirect_to lists_path
   end
-  
+
+
   private
 
   def book_params

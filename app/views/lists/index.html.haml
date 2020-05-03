@@ -39,6 +39,7 @@
         %table
           %thead
             %tr
+              %th BM
               %th 日付
               %th 科目
               %th 項目
@@ -50,6 +51,15 @@
           %tbody
             - @books.each do |book|
               %tr
+                .bookmark
+                  - if book.bookmark_by?(current_user)
+                    %td
+                      = link_to book_bookmarks_path(book.id), class:"bookmark-on", method: :delete do
+                        =icon('fas', 'star')
+                  - else
+                    %td
+                      = link_to book_bookmarks_path(book.id), class:"bookmark-off", method: :post do
+                        = icon('far', 'star')
                 .date
                   %td= book.date.strftime('%Y/%m/%d')
                 .select
@@ -67,9 +77,10 @@
                 .edit
                   %td
                     = link_to edit_book_path(book), class: "btn" do
-                      = icon('fas', 'edit', class: 'icon')
+                      = icon('fas', 'edit')
                 .destroy
                   %td
                     = link_to book_path(book.id), method: :delete, class: "btn", data: { confirm: "削除してよろしいですか？", commit: "削除する", cancel: "やめる"} do
-                      = icon('fas', 'trash-alt', class: 'icon')
+                      = icon('fas', 'trash-alt')
+
         = paginate(@books)

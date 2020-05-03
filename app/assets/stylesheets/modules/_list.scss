@@ -124,13 +124,48 @@
         border: solid 3px #ddd;
         line-height: 50px;
       }
-      a {
+      .btn {
         color: gray;
       }
-      
+      .bookmark-on {
+        color: #E2750F;
+      }
+      .bookmark-off {
+        color: gray;
+      }
     }
-    .pagination {
-      text-align: center;
+    nav{
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    a{
+      // font-weight:bold;
+      text-decoration:none;
+      color:gray;
+      transition:.3s;
+    }
+    span{
+      margin-right: 5px;
+      margin-left: 5px;
+      text-decoration:none;
+      color:gray;
+      transition:.3s;
+    }
+    a:hover{
+      background:skyblue;
+      color: white;
+      border-radius:50%;
+    }
+    span:hover{
+      background:skyblue;
+      color: white;
+      border-radius:50%;
+    }
+    .current{
+      background:skyblue;
+      color: white;
+      border-radius:100%;
     }
   }
 
