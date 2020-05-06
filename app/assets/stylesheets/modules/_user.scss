@@ -140,8 +140,6 @@
   }
 }
 
-
-// ブックマーク
 .bookmarks {
   display: flex;
   justify-content: center;
@@ -183,7 +181,6 @@
       justify-content: center;
     }
     a{
-      // font-weight:bold;
       text-decoration:none;
       color:gray;
       transition:.3s;
