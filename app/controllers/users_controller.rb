@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @books = @user.books
-    @bookmark_books = @user.bookmark_books.order("date DESC").page(params[:page]).per(10)
+    @bookmark_books = @user.bookmark_books.order(date: :DESC, updated_at: :DESC).page(params[:page]).per(10)
   end
 
   def edit
