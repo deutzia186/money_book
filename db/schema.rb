@@ -10,12 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_23_055720) do
+ActiveRecord::Schema.define(version: 2020_05_01_101403) do
+
+  create_table "bookmarks", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "book_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["book_id"], name: "index_bookmarks_on_book_id"
+    t.index ["user_id", "book_id"], name: "index_bookmarks_on_user_id_and_book_id", unique: true
+    t.index ["user_id"], name: "index_bookmarks_on_user_id"
+  end
 
   create_table "books", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.integer "select"
+    t.string "select"
     t.datetime "date", null: false
-    t.integer "item_id", null: false
+    t.integer "category_id"
     t.integer "price", null: false
     t.string "image"
     t.text "memo"
@@ -23,13 +33,6 @@ ActiveRecord::Schema.define(version: 2020_03_23_055720) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_books_on_user_id"
-  end
-
-  create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.integer "item_id"
-    t.string "topic"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
@@ -46,5 +49,7 @@ ActiveRecord::Schema.define(version: 2020_03_23_055720) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "bookmarks", "books"
+  add_foreign_key "bookmarks", "users"
   add_foreign_key "books", "users"
 end
