@@ -42,7 +42,10 @@
     }
   }
   .contents {
+    width: 100%;
+    display: flex;
     &__left {
+      width: 30%;
       margin-left: 100px;
       margin-top: 50px;
       &__income {
@@ -59,6 +62,7 @@
           padding: 10px;
           padding-left: 100px;
           text-align: right;
+          width: 200px;
         }
       }
       &__expense {
@@ -77,6 +81,8 @@
           padding-left: 100px;
           text-align: right;
           border-top: none;
+          width: 200px;
+
         }
       }
       &__balance {
@@ -95,8 +101,13 @@
           padding-left: 100px;
           text-align: right;
           border-top: none;
+          width: 200px;
+
         }
       }
+    }
+    &__right {
+
     }
   }
 }

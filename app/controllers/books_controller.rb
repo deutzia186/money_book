@@ -1,5 +1,22 @@
 class BooksController < ApplicationController
   def index
+    # 収入計算
+    @income =Book.where(user_id: current_user.id).where(select: "収入").where(date: Time.current.all_month)
+
+		@income_total = 0
+		@income.each do |income|
+      @income_total += income.price
+    end
+    # 支出計算
+    @expense =Book.where(user_id: current_user.id).where(select: "支出").where(date: Time.current.all_month)
+    @expense_total = 0
+    @expense.each do |expense|
+      @expense_total += expense.price
+    end
+    # 収支計算
+    @sum = @income_total - @expense_total
+
+    @chart = Book.group(:category_id).count
   end
 
   def new
