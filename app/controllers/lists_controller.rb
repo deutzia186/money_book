@@ -1,6 +1,5 @@
 class ListsController < ApplicationController
   def index
-    @categories = Category.all
     @books = current_user.books.order(date: :DESC, updated_at: :DESC).page(params[:page]).per(10) # userモデルにhas_many :booksとあるのでこう書ける
 
     @q = Book.ransack(params[:q])

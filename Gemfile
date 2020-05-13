@@ -71,3 +71,7 @@ gem 'kaminari'
 gem 'active_hash'
 gem 'rails-i18n'
 gem 'gon'
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+gem "chartkick"
+gem 'chartable'
