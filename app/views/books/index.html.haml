@@ -2,6 +2,7 @@
   = render "shared/header"
   .contents
     .contents__left
+      = @title
       .contents__left__income
         .contents__left__income__title
           今月の収入
@@ -21,4 +22,30 @@
           ¥
           = @sum
     .contents__right
-      = pie_chart @chart, donut: true, legend: false
+      = pie_chart @chart, donut: true
+
+  .contents__recent
+    直近の明細
+    .contents__recent__detail
+      %table
+        %thead
+          %tr
+            %th 日付
+            %th 科目
+            %th 項目
+            %th 価格
+            %th メモ
+        %tbody
+          - @books.each do |book|
+            %tr
+              .date
+                %td= book.date.strftime('%Y/%m/%d')
+              .select
+                %td= book.select
+              .category
+                %td= book.category.name
+              .price
+                %td= book.price
+              .memo
+                %td= book.memo
+

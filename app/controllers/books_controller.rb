@@ -1,8 +1,11 @@
 class BooksController < ApplicationController
   def index
+    @month = Date.today.strftime('%-m月')
+    @text = "の収支"
+    @title = @month + @text
+
     # 収入計算
     @income =Book.where(user_id: current_user.id).where(select: "収入").where(date: Time.current.all_month)
-
 		@income_total = 0
 		@income.each do |income|
       @income_total += income.price
@@ -16,7 +19,11 @@ class BooksController < ApplicationController
     # 収支計算
     @sum = @income_total - @expense_total
 
+    # @chart = Book.left_outer_joins(:category).select('books.*, COUNT(category.*)')
     @chart = Book.group(:category_id).count
+
+    @books = Book.where(user_id: current_user.id).order(date: :DESC, updated_at: :DESC).limit(3)
+
   end
 
   def new
