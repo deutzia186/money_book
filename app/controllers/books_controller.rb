@@ -18,9 +18,10 @@ class BooksController < ApplicationController
     end
     # 収支計算
     @sum = @income_total - @expense_total
+    
+    @expense_chart = Book.eager_load(:category).where(categories: {id: 1..15 }).where(user_id: current_user.id).where(date: Time.current.all_month).group('categories.name').order("SUM(books.price) DESC").pluck('categories.name, SUM(books.price)')
+    @income_chart = Book.eager_load(:category).where(categories: {id: 16..23 }).where(user_id: current_user.id).where(date: Time.current.all_month).group('categories.name').order("SUM(books.price) DESC").pluck('categories.name, SUM(books.price)')
 
-    # @chart = Book.left_outer_joins(:category).select('books.*, COUNT(category.*)')
-    @chart = Book.group(:category_id).count
 
     @books = Book.where(user_id: current_user.id).order(date: :DESC, updated_at: :DESC).limit(3)
 
