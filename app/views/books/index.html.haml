@@ -2,7 +2,8 @@
   = render "shared/header"
   .contents
     .contents__left
-      = @title
+      .contents__left__title
+        = @title
       .contents__left__income
         .contents__left__income__title
           今月の収入
@@ -22,10 +23,17 @@
           ¥
           = @sum
     .contents__right
-      = pie_chart @chart, donut: true
+      .contents__right__expense
+        %p 支出の内訳
+        = pie_chart @expense_chart,legend: false, width: "400px", height: "200px", prefix: "¥", thousands: ",", messages: {empty: "支出を登録してください"}
+      .contenst__right__income
+        %p 収入の内訳
+        = pie_chart @income_chart,legend: false, width: "400px", height: "200px", prefix: "¥", thousands: ",", messages: {empty: "収入を登録してください"}
+
 
   .contents__recent
-    直近の明細
+    .contents__recent__title
+      直近の明細
     .contents__recent__detail
       %table
         %thead
