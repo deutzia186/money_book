@@ -29,7 +29,9 @@
                 .category
                   %td= book.category.name
                 .price
-                  %td= book.price
+                  %td.price
+                    ¥
+                    = book.price.to_s(:delimited)
                 .memo
                   %td= book.memo
                 .image

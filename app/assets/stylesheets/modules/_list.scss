@@ -1,8 +1,11 @@
 .detail {
   display: flex;
+  margin-top: 20px;
   .left-content {
     width: 25%;
-    margin: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
     .search {
       width: 100%;
       padding-bottom: 6px;
@@ -106,7 +109,6 @@
     width: 75%;
     &__title {
       margin-right: 10px;
-      margin-top: 10px;
       table {
         width: 100%;
         font-size: 15px;
@@ -119,10 +121,13 @@
         padding-bottom: 5px;
       }
       table td {
-        padding: 3px 10px;
         text-align: center;
         border: solid 2px #ddd;
         line-height: 50px;
+      }
+      table td.price {
+        text-align: right;
+        padding-right: 10px;
       }
       .btn {
         color: gray;
@@ -152,17 +157,17 @@
       transition:.3s;
     }
     a:hover{
-      background:skyblue;
+      background:lightskyblue;
       color: white;
       border-radius:50%;
     }
     span:hover{
-      background:skyblue;
+      background:lightskyblue;
       color: white;
       border-radius:50%;
     }
     .current{
-      background:skyblue;
+      background:lightskyblue;
       color: white;
       border-radius:100%;
     }
@@ -170,7 +175,9 @@
 
   .answer {
     width: 25%;
-    margin: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
     .query {
       width: 100%;
       padding-bottom: 6px;

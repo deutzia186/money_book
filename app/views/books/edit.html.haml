@@ -42,6 +42,11 @@
                       %i.fas.fa-image
                   = form.file_field :image, class: "image", style: "display:none;", id: "file-expense"
                   = form.hidden_field :image_cache
+
+              - if @book.image.url.present?
+                .checkbox
+                  = form.check_box :remove_image
+                  = form.label "画像を削除する"
               %button.register{type: "button"}
                 = form.submit "更新", class:'register__button'
       .panel
@@ -76,6 +81,10 @@
                       %i.fas.fa-image
                   = form.file_field :image, class: "image", style: "display:none;", id: "file-income"
                   = form.hidden_field :image_cache
+              - if @book.image.url.present?
+                .checkbox
+                  = form.check_box :remove_image
+                  = form.label "画像を削除する"
               %button.register{type: "button"}
                 = form.submit "更新", class:'register__button'
 
@@ -112,6 +121,10 @@
                       %i.fas.fa-image
                   = form.file_field :image, class: "image", style: "display:none;", id: "file-expense"
                   = form.hidden_field :image_cache
+              - if @book.image.url.present?
+                .checkbox
+                  = form.check_box :remove_image
+                  = form.label "画像を削除する"
               %button.register{type: "button"}
                 = form.submit "更新", class:'register__button'
       .panel.is-show
@@ -146,6 +159,10 @@
                       %i.fas.fa-image
                   = form.file_field :image, class: "image", style: "display:none;", id: "file-income"
                   = form.hidden_field :image_cache
+              - if @book.image.url.present?
+                .checkbox
+                  = form.check_box :remove_image
+                  = form.label "画像を削除する"
               %button.register{type: "button"}
                 = form.submit "更新", class:'register__button'
 

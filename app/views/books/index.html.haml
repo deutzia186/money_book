@@ -9,19 +9,19 @@
           今月の収入
         .contents__left__income__price
           ¥
-          = @income_total
+          = @income_total.to_s(:delimited)
       .contents__left__expense
         .contents__left__expense__title
           今月の支出
         .contents__left__expense__price
           ¥
-          = @expense_total
+          = @expense_total.to_s(:delimited)
       .contents__left__balance
         .contents__left__balance__title
           今月の収支
         .contents__left__balance__price
           ¥
-          = @sum
+          = @sum.to_s(:delimited)
     .contents__right
       .contents__right__expense
         %p 支出の内訳
@@ -43,6 +43,8 @@
             %th 項目
             %th 価格
             %th メモ
+            %th 画像
+
         %tbody
           - @books.each do |book|
             %tr
@@ -53,7 +55,13 @@
               .category
                 %td= book.category.name
               .price
-                %td= book.price
+                %td.price
+                  ¥
+                  = book.price.to_s(:delimited)
               .memo
                 %td= book.memo
+              .image
+                %td
+                  - if book.image.present?
+                    %img{src: book.image ,width:"50px",height:"30px"}
 

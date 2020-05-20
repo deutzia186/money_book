@@ -33,8 +33,11 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(book_params)
-    @book.save
-    redirect_to new_book_path
+    if @book.save
+      redirect_to lists_path
+    else
+      redirect_to root_path, alert: '登録できませんでした'
+    end
   end
 
   def edit
@@ -44,7 +47,7 @@ class BooksController < ApplicationController
   def update
     @book = Book.find(params[:id])
     @book.update(book_params)
-    redirect_to new_book_path
+    redirect_to lists_path
   end
 
   def destroy
@@ -57,6 +60,6 @@ class BooksController < ApplicationController
   private
 
   def book_params
-    params.require(:book).permit(:select, :date, :category_id, :price, :image, :image_cache, :memo,).merge(user_id: current_user.id)
+    params.require(:book).permit(:select, :date, :category_id, :price, :image, :image_cache, :remove_image, :memo,).merge(user_id: current_user.id)
   end
 end
