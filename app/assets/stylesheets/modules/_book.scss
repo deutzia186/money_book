@@ -158,10 +158,13 @@
         line-height: 25px;
       }
       table td {
-        padding: 3px 10px;
         text-align: center;
         border: solid 2px #ddd;
-        line-height: 30px;
+        line-height: 40px;
+      }
+      table td.price {
+        text-align: right;
+        padding-right: 10px;
       }
     }
   }
