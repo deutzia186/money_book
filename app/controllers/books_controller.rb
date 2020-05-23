@@ -19,11 +19,15 @@ class BooksController < ApplicationController
     # 収支計算
     @sum = @income_total - @expense_total
     
+    # 円グラフ
     @expense_chart = Book.eager_load(:category).where(categories: {id: 1..15 }).where(user_id: current_user.id).where(date: Time.current.all_month).group('categories.name').order("SUM(books.price) DESC").pluck('categories.name, SUM(books.price)')
     @income_chart = Book.eager_load(:category).where(categories: {id: 16..23 }).where(user_id: current_user.id).where(date: Time.current.all_month).group('categories.name').order("SUM(books.price) DESC").pluck('categories.name, SUM(books.price)')
 
+    #直近の明細
+    @books = Book.where(user_id: current_user.id).order(date: :DESC, updated_at: :DESC).limit(5)
 
-    @books = Book.where(user_id: current_user.id).order(date: :DESC, updated_at: :DESC).limit(3)
+    # カレンダー
+    @calendars = Book.all.where(user_id: current_user.id)
 
   end
 

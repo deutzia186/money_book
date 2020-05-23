@@ -75,3 +75,4 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem "chartkick"
 gem 'chartable'
+gem "simple_calendar", "~> 2.0"
