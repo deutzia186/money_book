@@ -2,19 +2,87 @@
   = render "shared/header"
   .contents
     .contents__left
+      .contents__left__title
+        = @title
       .contents__left__income
         .contents__left__income__title
           今月の収入
         .contents__left__income__price
-          5000円
+          ¥
+          = @income_total.to_s(:delimited)
       .contents__left__expense
         .contents__left__expense__title
           今月の支出
         .contents__left__expense__price
-          2000円
+          ¥
+          = @expense_total.to_s(:delimited)
       .contents__left__balance
         .contents__left__balance__title
           今月の収支
         .contents__left__balance__price
-          3000円
+          ¥
+          = @sum.to_s(:delimited)
+    .contents__right
+      .contents__right__expense
+        %p 支出の内訳
+        = pie_chart @expense_chart,legend: false, width: "400px", height: "200px", prefix: "¥", thousands: ",", messages: {empty: "支出を登録してください"}
+      .contenst__right__income
+        %p 収入の内訳
+        = pie_chart @income_chart,legend: false, width: "400px", height: "200px", prefix: "¥", thousands: ",", messages: {empty: "収入を登録してください"}
+
+
+  .contents__recent
+    .contents__recent__title
+      直近の明細
+    .contents__recent__detail
+      %table
+        %thead
+          %tr
+            %th 日付
+            %th 科目
+            %th 項目
+            %th 価格
+            %th メモ
+            %th 画像
+
+        %tbody
+          - @books.each do |book|
+            %tr
+              .date
+                %td= book.date.strftime('%Y/%m/%d')
+              .select
+                %td= book.select
+              .category
+                %td= book.category.name
+              .price
+                %td.price
+                  ¥
+                  = book.price.to_s(:delimited)
+              .memo
+                %td= book.memo
+              .image
+                %td
+                  - if book.image.present?
+                    %img{src: book.image ,width:"50px",height:"30px"}
+  .calendar
+    .calendar__title
+      カレンダー
+    = month_calendar(attribute: :date, events: @calendars) do |date, calendars|
+      = date.strftime('%-d')
+      - calendars.each do |calendar|
+        .calendar__price
+          .calendar__price__income
+            - if calendar.select == "収入"
+              = calendar.category.name
+              %p +¥
+              = calendar.price.to_s(:delimited)
+          .calendar__price__expense
+            - if calendar.select == "支出"
+              = calendar.category.name
+              %p -¥
+              = calendar.price.to_s(:delimited)
+
+
+
+
 
