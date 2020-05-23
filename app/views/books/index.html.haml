@@ -64,4 +64,25 @@
                 %td
                   - if book.image.present?
                     %img{src: book.image ,width:"50px",height:"30px"}
+  .calendar
+    .calendar__title
+      カレンダー
+    = month_calendar(attribute: :date, events: @calendars) do |date, calendars|
+      = date.strftime('%-d')
+      - calendars.each do |calendar|
+        .calendar__price
+          .calendar__price__income
+            - if calendar.select == "収入"
+              = calendar.category.name
+              %p +¥
+              = calendar.price.to_s(:delimited)
+          .calendar__price__expense
+            - if calendar.select == "支出"
+              = calendar.category.name
+              %p -¥
+              = calendar.price.to_s(:delimited)
+
+
+
+
 

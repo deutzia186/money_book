@@ -168,4 +168,54 @@
       }
     }
   }
+  .calendar {
+    margin: 20px 200px 50px;
+    &__title {
+      border-bottom: solid 2px darkorange;
+      margin-bottom: 10px;
+    }
+    &__price {
+      text-align: right;
+      &__income {
+        color: #0b4eb3;
+      }
+      &__expense {
+        color: #AA4643;
+      }
+      p {
+        display:inline-block
+      }
+    }
+    .simple-calendar {
+      .wday-0 {background-color: rgb(252, 202, 184);}
+      .wday-1 {}
+      .wday-2 {}
+      .wday-3 {}
+      .wday-4 {}
+      .wday-5 {}
+      .wday-6 {background-color: rgb(190, 230, 255);}
+      .today {background-color: lightyellow;}
+      .prev-month {background-color: rgb(245, 245, 245);}
+      .next-month {background-color: rgb(245, 245, 245);}
+      .calendar-heading {
+        text-align: center;
+        a {
+          color: gray;
+          // text-decoration: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+      table {
+        th {
+          text-align: center;
+          background-color: #eee;
+          border: solid 2px #ddd;
+        }
+        td  {
+          border: solid 2px #ddd;
+        }
+      }
+    }
+  }
 }
