@@ -42,59 +42,178 @@
     }
   }
   .contents {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
     &__left {
-      margin-left: 100px;
-      margin-top: 50px;
+      width: 30%;
+      margin-left: 200px;
+      &__title {
+        border-bottom: solid 2px darkorange;
+        width: 350px;
+        margin-bottom: 10px;
+      }
       &__income {
         display: flex;
+        height: 50px;
         &__title {
-          border: 1px solid gray;
-          padding: 10px;
-          background-color: lightgray;
-          padding-right: 50px;
+          border: solid 2px #ddd;
+          line-height: 50px;
+          background-color: #eee;
+          width: 150px;
+          text-align: center;
         }
         &__price {
-          border: 1px solid gray;
-          border-left:none;
-          padding: 10px;
+          border: solid 2px #ddd;
+          border-left: none;
           padding-left: 100px;
           text-align: right;
+          width: 200px;
+          line-height: 50px;
+          padding-right: 10px;
         }
       }
       &__expense {
         display: flex;
+        height: 50px;
         &__title {
-          border: 1px solid gray;
-          padding: 10px;
-          background-color: lightgray;
+          border: solid 2px #ddd;
+          line-height: 50px;
+          background-color: #eee;
+          width: 150px;
+          text-align: center;
           border-top: none;
-          padding-right: 50px;
         }
         &__price {
-          border: 1px solid gray;
-          border-left:none;
-          padding: 10px;
+          border: solid 2px #ddd;
+          border-left: none;
           padding-left: 100px;
           text-align: right;
+          width: 200px;
+          line-height: 50px;
+          padding-right: 10px;
           border-top: none;
         }
       }
       &__balance {
         display: flex;
+        height: 50px;
         &__title {
-          border: 1px solid gray;
-          padding: 10px;
-          background-color: lightgray;
+          border: solid 2px #ddd;
+          line-height: 50px;
+          background-color: #eee;
+          width: 150px;
+          text-align: center;
           border-top: none;
-          padding-right: 50px;
         }
         &__price {
-          border: 1px solid gray;
-          border-left:none;
-          padding: 10px;
+          border: solid 2px #ddd;
+          border-left: none;
           padding-left: 100px;
           text-align: right;
+          width: 200px;
+          line-height: 50px;
+          padding-right: 10px;
           border-top: none;
+        }
+      }
+    }
+    &__right {
+      width: 70%;
+      display: flex;
+      &__expense {
+        width: 400px;
+        margin-right: 20px;
+      }
+      &__income {
+        width: 400px;
+      }
+      #chart-1 {
+      }
+      #chart-2 {
+      }
+      p {
+        border-bottom: solid 2px darkorange;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .contents__recent {
+    margin-top: 20px;
+    margin-right: 200px;
+    margin-left: 200px;
+    &__title {
+      border-bottom: solid 2px darkorange;
+      margin-bottom: 10px;
+    }
+    &__detail {
+      table {
+        width: 100%;
+        font-size: 15px;
+      }
+      table th {
+        border: solid 2px #ddd;
+        background-color: #eee;
+        text-align: center;
+        line-height: 25px;
+      }
+      table td {
+        text-align: center;
+        border: solid 2px #ddd;
+        line-height: 40px;
+      }
+      table td.price {
+        text-align: right;
+        padding-right: 10px;
+      }
+    }
+  }
+  .calendar {
+    margin: 20px 200px 50px;
+    &__title {
+      border-bottom: solid 2px darkorange;
+      margin-bottom: 10px;
+    }
+    &__price {
+      text-align: right;
+      &__income {
+        color: #0b4eb3;
+      }
+      &__expense {
+        color: #AA4643;
+      }
+      p {
+        display:inline-block
+      }
+    }
+    .simple-calendar {
+      .wday-0 {background-color: rgb(252, 202, 184);}
+      .wday-1 {}
+      .wday-2 {}
+      .wday-3 {}
+      .wday-4 {}
+      .wday-5 {}
+      .wday-6 {background-color: rgb(190, 230, 255);}
+      .today {background-color: lightyellow;}
+      .prev-month {background-color: rgb(245, 245, 245);}
+      .next-month {background-color: rgb(245, 245, 245);}
+      .calendar-heading {
+        text-align: center;
+        a {
+          color: gray;
+          // text-decoration: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+      table {
+        th {
+          text-align: center;
+          background-color: #eee;
+          border: solid 2px #ddd;
+        }
+        td  {
+          border: solid 2px #ddd;
         }
       }
     }

@@ -2,6 +2,16 @@
 @import "modules/book";
 @import "modules/new";
 @import "modules/user";
-@import "modules/_list";
+@import "modules/list";
+@import "modules/edit";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "simple_calendar";
+
+.notifications {
+  color: white;
+  text-align: center;
+  .alert {
+    background-color: red;
+  }
+}

@@ -143,11 +143,10 @@
 .bookmarks {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
   .list {
     width: 75%;
     &__title {
-      margin-right: 10px;
-      margin-top: 10px;
       table {
         width: 100%;
         font-size: 15px;
@@ -160,10 +159,13 @@
         padding-bottom: 5px;
       }
       table td {
-        padding: 3px 10px;
         text-align: center;
         border: solid 3px #ddd;
         line-height: 50px;
+      }
+      table td.price {
+        text-align: right;
+        padding-right: 10px;
       }
       .btn {
         color: gray;
@@ -193,17 +195,17 @@
       transition:.3s;
     }
     a:hover{
-      background:skyblue;
+      background:lightskyblue;
       color: white;
       border-radius:50%;
     }
     span:hover{
-      background:skyblue;
+      background:lightskyblue;
       color: white;
       border-radius:50%;
     }
     .current{
-      background:skyblue;
+      background:lightskyblue;
       color: white;
       border-radius:100%;
     }
