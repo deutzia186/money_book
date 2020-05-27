@@ -41,6 +41,7 @@
       }
     }
   }
+
   .contents {
     width: 100%;
     display: flex;
@@ -53,7 +54,7 @@
         width: 350px;
         margin-bottom: 10px;
       }
-      &__income {
+      &__income, &__expense {
         display: flex;
         height: 50px;
         &__title {
@@ -62,6 +63,7 @@
           background-color: #eee;
           width: 150px;
           text-align: center;
+          border-bottom: none;
         }
         &__price {
           border: solid 2px #ddd;
@@ -71,28 +73,7 @@
           width: 200px;
           line-height: 50px;
           padding-right: 10px;
-        }
-      }
-      &__expense {
-        display: flex;
-        height: 50px;
-        &__title {
-          border: solid 2px #ddd;
-          line-height: 50px;
-          background-color: #eee;
-          width: 150px;
-          text-align: center;
-          border-top: none;
-        }
-        &__price {
-          border: solid 2px #ddd;
-          border-left: none;
-          padding-left: 100px;
-          text-align: right;
-          width: 200px;
-          line-height: 50px;
-          padding-right: 10px;
-          border-top: none;
+          border-bottom: none;
         }
       }
       &__balance {
@@ -104,7 +85,6 @@
           background-color: #eee;
           width: 150px;
           text-align: center;
-          border-top: none;
         }
         &__price {
           border: solid 2px #ddd;
@@ -114,7 +94,6 @@
           width: 200px;
           line-height: 50px;
           padding-right: 10px;
-          border-top: none;
         }
       }
     }
@@ -188,11 +167,6 @@
     }
     .simple-calendar {
       .wday-0 {background-color: rgb(252, 202, 184);}
-      .wday-1 {}
-      .wday-2 {}
-      .wday-3 {}
-      .wday-4 {}
-      .wday-5 {}
       .wday-6 {background-color: rgb(190, 230, 255);}
       .today {background-color: lightyellow;}
       .prev-month {background-color: rgb(245, 245, 245);}
