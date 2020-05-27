@@ -8,7 +8,7 @@ class ListsController < ApplicationController
 
   def search
     @q = Book.ransack(search_params)
-    @searches = @q.result(distinct: true).order(date: :DESC, updated_at: :DESC).page(params[:page]).per(10)
+    @searches = @q.result(distinct: true).where(user_id: current_user.id).order(date: :DESC, updated_at: :DESC).page(params[:page]).per(10)
   end
 
   private
