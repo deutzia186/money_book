@@ -1,6 +1,4 @@
-.user-header
-  .user-header__title
-    Money Book
+= render "devise/shared/devise-header"
 .account-page
   .account-page-guest
     = link_to 'ゲストログイン（閲覧用）', users_guest_sign_in_path, method: :post, class: 'guest-login'
