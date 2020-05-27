@@ -1,6 +1,6 @@
 class ListsController < ApplicationController
   def index
-    @books = current_user.books.order(date: :DESC, updated_at: :DESC).page(params[:page]).per(10) # userモデルにhas_many :booksとあるのでこう書ける
+    @books = current_user.books.order(date: :DESC, updated_at: :DESC).page(params[:page]).per(10)
 
     @q = Book.ransack(params[:q])
     @searches = @q.result(distinct: true)
