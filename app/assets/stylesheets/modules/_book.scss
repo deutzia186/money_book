@@ -8,7 +8,6 @@
   .header{
     height: 130px;
     width: 100%;
-    background-color:white;
     color: #0d5dd2;
     box-shadow: 0 2px 3px rgba(0,0,0,0.1), 0 2px 3px rgba(0,0,0,0.1);
     &__top {
@@ -16,6 +15,7 @@
         text-decoration: none ;
         line-height: 32px;
         margin-right: 10px;
+        margin-left: 10px;
         color: #0d5dd2;
       }
       &__contents {

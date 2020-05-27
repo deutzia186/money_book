@@ -1,14 +1,40 @@
+.user-header{
+  height: 130px;
+  width: 100%;
+  color: #0d5dd2;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1), 0 2px 3px rgba(0,0,0,0.1);
+  font-family: 'Helvetica Neue','Helvetica','Arial';
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 130px;
+  }
+}
 .account-page {
+  width: 100%;
+  .account-page-guest {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+    a {
+      text-decoration: none;
+      background-color: darkorange;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 6px;
+    }
+  }
   .account-page__inner {
     width: 980px;
-    margin: 60px auto;
-    padding: 60px;
+    margin: 30px auto;
+    padding: 60px 80px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
+    display: flex;
 
     .account-page__inner--left, .account-page__inner--right {
-      float: left;
       width: 50%;
     }
     &:after {
@@ -22,41 +48,39 @@
     h2 {
       margin-bottom: 10px;
       letter-spacing: 3px;
-      font-size: 40px;
-      font-weight: 200;
-
+      font-size: 25px;
       &:after {
         content: '';
         display: block;
-        width: 60px;
-        margin-top: 5px;
-        border-bottom: 1px solid #38aef0;
+        width: 225px;
+        border-bottom: 2px solid darkorange;
       }
     }
 
     h5 {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       font-size: 14px;
-      font-weight: 200;
     }
 
     .btn {
-      margin-top: 20px;
       color: #fff;
-      background-color: #ccc;
-      font-size: 14px;
+      background-color: #bbb;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 6px;
+    }
+    a {
+      width: 200px;
     }
   }
 
   .field {
     margin-bottom: 10px;
-
     .field-label {
       padding: 10px 0;
       letter-spacing: 1px;
       font-size: 14px;
-      font-weight: 200;
-
       i {
         font-size: 11px;
       }
@@ -71,23 +95,26 @@
     }
   }
 
-  .btn {
-    display: inline-block;
-    height: 50px;
-    padding: 0 30px;
-    line-height: 50px;
-    letter-spacing: 1px;
+  .actions {
     text-align: center;
-    border: none;
-    border-radius: 2px;
+    .btn {
+      display: inline-block;
+      height: 50px;
+      padding: 0 30px;
+      line-height: 50px;
+      letter-spacing: 1px;
+      text-align: center;
+      border: none;
+      border-radius: 6px;
+    }
+    input[type='submit'] {
+      margin-top: 20px;
+      color: #fff;
+      background-color: #0d5dd2;
+      width: 100%;
+    }
   }
 
-  input[type='submit'] {
-    float: left;
-    margin-top: 20px;
-    color: #fff;
-    background-color: #38aef0;
-  }
 
   .field-label {
     .field_with_errors {
