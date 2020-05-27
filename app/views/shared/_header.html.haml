@@ -4,11 +4,14 @@
       - if user_signed_in?
         = link_to edit_user_path(current_user) do
           = icon('fas', 'cog', class: 'icon')
-        =link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'
+          設定
+        =link_to destroy_user_session_path, method: :delete, class: 'btn' do
+          = icon('fas', 'sign-out-alt', class: 'icon')
+          ログアウト
 
       - else
         =link_to "ログイン",new_user_session_path,class: "log-in"
-        =link_to "新規会員登録",new_user_registration_path,class: "sign-up"
+        =link_to "新規登録",new_user_registration_path,class: "sign-up"
   .header__title
     Money Book
   .header__bottom
