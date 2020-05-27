@@ -1,7 +1,5 @@
 class UsersController < ApplicationController
-  def index
-    @users = User.all
-  end
+  before_action :check_guest, only: :update
 
   def show
     @user = User.find(params[:id])
@@ -17,6 +15,13 @@ class UsersController < ApplicationController
       redirect_to root_path
     else
       render :edit
+    end
+  end
+
+  def check_guest
+    @guest = User.find(params[:id])
+    if @guest.email == 'guest@example.com'
+      redirect_to root_path, alert: 'ゲストユーザーは変更できません。'
     end
   end
 
