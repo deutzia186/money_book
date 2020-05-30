@@ -6,8 +6,8 @@
     = csrf_meta_tags
     = csp_meta_tag
     -# = stylesheet_pack_tag 'application', media: 'all'
-    -# = javascript_pack_tag 'application'
-    -# = javascript_include_tag 'book'
+    = javascript_pack_tag 'application'
+    = javascript_include_tag 'book'
   %body
     .notifications
       - flash.each do |key, value|
