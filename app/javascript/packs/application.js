@@ -5,7 +5,7 @@
 
 import 'core-js/stable'
 import 'regenerator-runtime/runtime'
-import '../src/application.scss'
+import '../src/style.scss'
 
 
 require("@rails/ujs").start()
