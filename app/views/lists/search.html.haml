@@ -74,10 +74,10 @@
                 .edit
                   %td
                     = link_to edit_book_path(search), class: "btn" do
-                      =icon('fas','edit', class: 'icon')
+                      %i.fas.fa-edit
                 .destry
                   %td
                     =link_to book_path(search.id), method: :delete, class: "btn", date:{ confirm: "削除してよろしいですか？", commit: "削除する", cancel: "やめる"} do
-                      =icon('fas','trash-alt', class: 'icon')
+                      %i.fas.fa-trash-alt
         = paginate(@searches)
 

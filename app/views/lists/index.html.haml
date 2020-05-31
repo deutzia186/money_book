@@ -55,11 +55,12 @@
                   - if book.bookmark_by?(current_user)
                     %td
                       = link_to book_bookmarks_path(book.id), class:"bookmark-on", method: :delete do
-                        =icon('fas', 'star')
+                        %i.fas.fa-star
+
                   - else
                     %td
                       = link_to book_bookmarks_path(book.id), class:"bookmark-off", method: :post do
-                        = icon('far', 'star')
+                        %i.far.fa-star
                 .date
                   %td= book.date.strftime('%Y/%m/%d')
                 .select
@@ -79,10 +80,10 @@
                 .edit
                   %td
                     = link_to edit_book_path(book), class: "btn" do
-                      = icon('fas', 'edit')
+                      %i.fas.fa-edit
                 .destroy
                   %td
                     = link_to book_path(book.id), method: :delete, class: "btn", data: { confirm: "削除してよろしいですか？", commit: "削除する", cancel: "やめる"} do
-                      = icon('fas', 'trash-alt')
+                      %i.fas.fa-trash-alt
 
         = paginate(@books)
