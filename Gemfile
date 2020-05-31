@@ -62,7 +62,6 @@ gem "omniauth-rails_csrf_protection"
 gem 'payjp'
 gem 'devise'
 gem 'erb2haml'
-gem 'jquery-rails'
 gem 'rspec-rails'
 gem 'pry-rails'
 gem 'dotenv-rails'
