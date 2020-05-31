@@ -55,7 +55,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog-aws'
-gem 'font-awesome-sass'
 gem 'haml-rails'
 gem 'ransack'
 gem 'omniauth'
