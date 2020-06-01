@@ -62,3 +62,7 @@
 #   }
 
 server '54.178.112.22', user: 'ec2-user', roles: %w{app db web}
+
+config.assets.css_compressor = :scss
+config.assets.enabled = true
+config.assets.compile = true
