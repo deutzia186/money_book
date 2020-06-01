@@ -1,5 +1,5 @@
 # ../が一つ増えている
-app_path = File.expand_path('../../../', __FILE__)
+app_path = "/var/www/money_book"
 
 worker_processes 1
 # currentを指定
