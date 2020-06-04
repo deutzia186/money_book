@@ -25,10 +25,10 @@
     .contents__right
       .contents__right__expense
         %p 支出の内訳
-        = pie_chart @expense_chart,legend: false, width: "400px", height: "200px", prefix: "¥", thousands: ",", messages: {empty: "支出を登録してください"}
+        = pie_chart @expense_chart,legend: false, prefix: "¥", thousands: ",", messages: {empty: "支出を登録してください"}
       .contenst__right__income
         %p 収入の内訳
-        = pie_chart @income_chart,legend: false, width: "400px", height: "200px", prefix: "¥", thousands: ",", messages: {empty: "収入を登録してください"}
+        = pie_chart @income_chart,legend: false, prefix: "¥", thousands: ",", messages: {empty: "収入を登録してください"}
 
 
   .contents__recent
