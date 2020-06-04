@@ -1,0 +1,83 @@
+.warapper
+  = render 'shared/header'
+  .detail
+    .answer
+      .query
+        .query__title
+          検索結果
+        .query__field
+          .query__field__date
+            - unless params[:q][:date_gteq].empty?
+              .query__field__date__start
+                %p.query__field__date__start__label 開始日：
+                = params[:q][:date_gteq]
+            - unless params[:q][:date_lteq].empty?
+              .query__field__date__end
+                %p.query__field__date__end__label 終了日：
+                = params[:q][:date_lteq]
+          .query__field__select
+            - unless params[:q][:select_eq].empty?
+              科目：
+              = params[:q][:select_eq]
+          .query__field__category
+            - unless params[:q][:category_id_eq].empty?
+              項目：
+              = Category.find(params[:q][:category_id_eq]).name
+          .query__field__price
+            - unless params[:q][:price_gteq].empty?
+              .query__field__price__start
+                %p.query__field__price__start__label 金額下限：
+                ¥
+                = params[:q][:price_gteq]
+            - unless params[:q][:price_lteq].empty?
+              .query__field__price__end
+                %p.query__field__price__end__label 金額上限：
+                ¥
+                = params[:q][:price_lteq]
+          .query__field__memo
+            - unless params[:q][:memo_cont].empty?
+              メモ：
+              = params[:q][:memo_cont]
+
+    .list
+      .list__title
+        %table
+          %thead
+            %tr
+              %th 日付
+              %th 科目
+              %th 項目
+              %th 価格
+              %th メモ
+              %th 画像
+              %th 編集
+              %th 削除
+          %tbody
+            - @searches.each do |search|
+              %tr
+                .date
+                  %td= search.date.strftime('%Y/%m/%d')
+                .select
+                  %td= search.select
+                .category
+                  %td= search.category.name
+                .price
+                  %td.price
+                    ¥
+                    = search.price.to_s(:delimited)
+                .memo
+                  %td= search.memo
+                .image
+                  %td
+                    - if search.image.present?
+                      %img{src: search.image, width:"50px", height:"30px"}
+                .edit
+                  %td
+                    = link_to edit_book_path(search), class: "btn" do
+                      %i.fas.fa-edit
+                .destry
+                  %td
+                    =link_to book_path(search.id), method: :delete, class: "btn", date:{ confirm: "削除してよろしいですか？", commit: "削除する", cancel: "やめる"} do
+                      %i.fas.fa-trash-alt
+        = paginate(@searches)
+
