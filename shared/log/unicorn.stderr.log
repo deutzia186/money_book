@@ -1,0 +1,490 @@
+I, [2020-06-01T07:32:01.601026 #10476]  INFO -- : Refreshing Gem list
+I, [2020-06-01T07:32:04.362877 #10476]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T07:32:04.370647 #10476]  INFO -- : master process ready
+I, [2020-06-01T07:32:04.377455 #10485]  INFO -- : worker=0 ready
+I, [2020-06-01T07:32:04.733213 #10515]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601072610)
+I, [2020-06-01T07:32:04.733312 #10515]  INFO -- : forked child re-executing...
+I, [2020-06-01T07:32:05.162795 #10515]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T07:32:05.163018 #10515]  INFO -- : Refreshing Gem list
+I, [2020-06-01T07:32:07.420462 #10515]  INFO -- : master process ready
+I, [2020-06-01T07:32:07.424030 #10562]  INFO -- : worker=0 ready
+I, [2020-06-01T07:32:07.512480 #10476]  INFO -- : reaped #<Process::Status: pid 10485 exit 0> worker=0
+I, [2020-06-01T07:32:07.512570 #10476]  INFO -- : master complete
+I, [2020-06-01T07:37:42.173830 #11588]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:fd 10>}] (in /var/www/money_book/releases/20200601073545)
+I, [2020-06-01T07:37:42.174539 #11588]  INFO -- : forked child re-executing...
+I, [2020-06-01T07:37:42.639859 #11588]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T07:37:42.640059 #11588]  INFO -- : Refreshing Gem list
+I, [2020-06-01T07:37:45.332603 #11588]  INFO -- : master process ready
+I, [2020-06-01T07:37:45.334355 #11635]  INFO -- : worker=0 ready
+I, [2020-06-01T07:37:45.424061 #10515]  INFO -- : reaped #<Process::Status: pid 10562 exit 0> worker=0
+I, [2020-06-01T07:37:45.424175 #10515]  INFO -- : master complete
+I, [2020-06-01T07:38:17.878201 #11588]  INFO -- : reaped #<Process::Status: pid 11635 exit 0> worker=0
+I, [2020-06-01T07:38:17.878319 #11588]  INFO -- : master complete
+I, [2020-06-01T08:10:43.548441 #12867]  INFO -- : Refreshing Gem list
+I, [2020-06-01T08:10:46.109696 #12867]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T08:10:46.109840 #12867]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T08:10:46.118921 #12867]  INFO -- : master process ready
+I, [2020-06-01T08:10:46.125669 #12876]  INFO -- : worker=0 ready
+I, [2020-06-01T08:10:46.626438 #12906]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601080847)
+I, [2020-06-01T08:10:46.626548 #12906]  INFO -- : forked child re-executing...
+I, [2020-06-01T08:10:47.057260 #12906]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T08:10:47.057469 #12906]  INFO -- : Refreshing Gem list
+I, [2020-06-01T08:10:49.304446 #12906]  INFO -- : master process ready
+I, [2020-06-01T08:10:49.308144 #12953]  INFO -- : worker=0 ready
+I, [2020-06-01T08:10:49.397389 #12867]  INFO -- : reaped #<Process::Status: pid 12876 exit 0> worker=0
+I, [2020-06-01T08:10:49.397474 #12867]  INFO -- : master complete
+I, [2020-06-01T08:15:48.557929 #13977]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:fd 10>}] (in /var/www/money_book/releases/20200601081351)
+I, [2020-06-01T08:15:48.558488 #13977]  INFO -- : forked child re-executing...
+I, [2020-06-01T08:15:49.002289 #13977]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T08:15:49.002494 #13977]  INFO -- : Refreshing Gem list
+I, [2020-06-01T08:15:51.524656 #13977]  INFO -- : master process ready
+I, [2020-06-01T08:15:51.532356 #14024]  INFO -- : worker=0 ready
+I, [2020-06-01T08:15:51.618671 #12906]  INFO -- : reaped #<Process::Status: pid 12953 exit 0> worker=0
+I, [2020-06-01T08:15:51.618775 #12906]  INFO -- : master complete
+I, [2020-06-01T08:19:23.224685 #13977]  INFO -- : reaped #<Process::Status: pid 14024 exit 0> worker=0
+I, [2020-06-01T08:19:23.224849 #13977]  INFO -- : master complete
+I, [2020-06-01T08:25:30.396052 #4215]  INFO -- : Refreshing Gem list
+I, [2020-06-01T08:25:32.924075 #4215]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T08:25:32.924671 #4215]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T08:25:32.930817 #4215]  INFO -- : master process ready
+I, [2020-06-01T08:25:32.937506 #4224]  INFO -- : worker=0 ready
+I, [2020-06-01T08:25:33.661533 #4254]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601082325)
+I, [2020-06-01T08:25:33.661621 #4254]  INFO -- : forked child re-executing...
+I, [2020-06-01T08:25:34.104663 #4254]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T08:25:34.104889 #4254]  INFO -- : Refreshing Gem list
+I, [2020-06-01T08:25:36.382957 #4254]  INFO -- : master process ready
+I, [2020-06-01T08:25:36.386904 #4325]  INFO -- : worker=0 ready
+I, [2020-06-01T08:25:36.477304 #4215]  INFO -- : reaped #<Process::Status: pid 4224 exit 0> worker=0
+I, [2020-06-01T08:25:36.477408 #4215]  INFO -- : master complete
+I, [2020-06-01T08:46:32.262397 #4254]  INFO -- : reaped #<Process::Status: pid 4325 exit 0> worker=0
+I, [2020-06-01T08:46:32.262523 #4254]  INFO -- : master complete
+I, [2020-06-01T09:02:33.069635 #6162]  INFO -- : Refreshing Gem list
+I, [2020-06-01T09:02:35.609005 #6162]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T09:02:35.609597 #6162]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T09:02:35.615826 #6162]  INFO -- : master process ready
+I, [2020-06-01T09:02:35.622852 #6171]  INFO -- : worker=0 ready
+I, [2020-06-01T09:02:36.233231 #6201]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601090031)
+I, [2020-06-01T09:02:36.233315 #6201]  INFO -- : forked child re-executing...
+I, [2020-06-01T09:02:36.678413 #6201]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T09:02:36.678653 #6201]  INFO -- : Refreshing Gem list
+I, [2020-06-01T09:02:39.411127 #6201]  INFO -- : master process ready
+I, [2020-06-01T09:02:39.414918 #6285]  INFO -- : worker=0 ready
+I, [2020-06-01T09:02:39.505260 #6162]  INFO -- : reaped #<Process::Status: pid 6171 exit 0> worker=0
+I, [2020-06-01T09:02:39.505351 #6162]  INFO -- : master complete
+150.246.40.189 - - [01/Jun/2020:09:05:03 +0000] "GET /unauthenticated HTTP/1.0" 302 100 0.0210
+150.246.40.189 - - [01/Jun/2020:09:05:03 +0000] "GET /users/sign_in HTTP/1.0" 200 2128 0.0518
+150.246.40.189 - - [01/Jun/2020:09:05:17 +0000] "POST /users/guest_sign_in HTTP/1.0" 302 87 0.0141
+150.246.40.189 - - [01/Jun/2020:09:05:17 +0000] "GET / HTTP/1.0" 200 5521 0.0582
+150.246.40.189 - - [01/Jun/2020:09:05:32 +0000] "DELETE /users/sign_out HTTP/1.0" 302 87 0.0089
+150.246.40.189 - - [01/Jun/2020:09:05:32 +0000] "GET /unauthenticated HTTP/1.0" 302 100 0.0037
+150.246.40.189 - - [01/Jun/2020:09:05:32 +0000] "GET /users/sign_in HTTP/1.0" 200 2128 0.0066
+I, [2020-06-01T09:08:52.262147 #6201]  INFO -- : reaped #<Process::Status: pid 6285 exit 0> worker=0
+I, [2020-06-01T09:08:52.262346 #6201]  INFO -- : master complete
+I, [2020-06-01T09:11:10.524277 #7499]  INFO -- : Refreshing Gem list
+I, [2020-06-01T09:11:13.204117 #7499]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T09:11:13.204565 #7499]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T09:11:13.210851 #7499]  INFO -- : master process ready
+I, [2020-06-01T09:11:13.217780 #7508]  INFO -- : worker=0 ready
+I, [2020-06-01T09:11:13.523596 #7538]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601090909)
+I, [2020-06-01T09:11:13.523692 #7538]  INFO -- : forked child re-executing...
+I, [2020-06-01T09:11:13.969739 #7538]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T09:11:13.969977 #7538]  INFO -- : Refreshing Gem list
+I, [2020-06-01T09:11:16.707168 #7538]  INFO -- : master process ready
+I, [2020-06-01T09:11:16.708922 #7622]  INFO -- : worker=0 ready
+I, [2020-06-01T09:11:16.799022 #7499]  INFO -- : reaped #<Process::Status: pid 7508 exit 0> worker=0
+I, [2020-06-01T09:11:16.799117 #7499]  INFO -- : master complete
+150.246.40.189 - - [01/Jun/2020:09:11:59 +0000] "GET /users/sign_in HTTP/1.0" 200 2036 0.0640
+I, [2020-06-01T09:13:38.159657 #7538]  INFO -- : reaped #<Process::Status: pid 7622 exit 0> worker=0
+I, [2020-06-01T09:13:38.159770 #7538]  INFO -- : master complete
+I, [2020-06-01T09:15:21.369746 #8722]  INFO -- : Refreshing Gem list
+I, [2020-06-01T09:15:23.886903 #8722]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T09:15:23.887044 #8722]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T09:15:23.893174 #8722]  INFO -- : master process ready
+I, [2020-06-01T09:15:23.900068 #8731]  INFO -- : worker=0 ready
+I, [2020-06-01T09:15:24.091734 #8761]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601091328)
+I, [2020-06-01T09:15:24.091839 #8761]  INFO -- : forked child re-executing...
+I, [2020-06-01T09:15:24.546311 #8761]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T09:15:24.547389 #8761]  INFO -- : Refreshing Gem list
+I, [2020-06-01T09:15:27.271231 #8761]  INFO -- : master process ready
+I, [2020-06-01T09:15:27.275028 #8845]  INFO -- : worker=0 ready
+I, [2020-06-01T09:15:27.363774 #8722]  INFO -- : reaped #<Process::Status: pid 8731 exit 0> worker=0
+I, [2020-06-01T09:15:27.363891 #8722]  INFO -- : master complete
+150.246.40.189 - - [01/Jun/2020:09:16:20 +0000] "GET /unauthenticated HTTP/1.0" 302 100 0.0215
+150.246.40.189 - - [01/Jun/2020:09:16:20 +0000] "GET /users/sign_in HTTP/1.0" 200 2128 0.0472
+I, [2020-06-01T09:18:10.891841 #8761]  INFO -- : reaped #<Process::Status: pid 8845 exit 0> worker=0
+I, [2020-06-01T09:18:10.894095 #8761]  INFO -- : master complete
+I, [2020-06-01T09:21:07.443932 #10142]  INFO -- : Refreshing Gem list
+I, [2020-06-01T09:21:10.049924 #10142]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T09:21:10.050067 #10142]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T09:21:10.057216 #10142]  INFO -- : master process ready
+I, [2020-06-01T09:21:10.063986 #10151]  INFO -- : worker=0 ready
+I, [2020-06-01T09:21:10.361471 #10181]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601091915)
+I, [2020-06-01T09:21:10.361587 #10181]  INFO -- : forked child re-executing...
+I, [2020-06-01T09:21:10.825339 #10181]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T09:21:10.825592 #10181]  INFO -- : Refreshing Gem list
+I, [2020-06-01T09:21:13.510906 #10181]  INFO -- : master process ready
+I, [2020-06-01T09:21:13.516971 #10253]  INFO -- : worker=0 ready
+I, [2020-06-01T09:21:13.604981 #10142]  INFO -- : reaped #<Process::Status: pid 10151 exit 0> worker=0
+I, [2020-06-01T09:21:13.605077 #10142]  INFO -- : master complete
+I, [2020-06-01T09:21:30.322005 #10181]  INFO -- : reaped #<Process::Status: pid 10253 exit 0> worker=0
+I, [2020-06-01T09:21:30.322172 #10181]  INFO -- : master complete
+I, [2020-06-01T09:31:47.751753 #11464]  INFO -- : Refreshing Gem list
+I, [2020-06-01T09:31:50.342290 #11464]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T09:31:50.342524 #11464]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T09:31:50.349381 #11464]  INFO -- : master process ready
+I, [2020-06-01T09:31:50.356030 #11473]  INFO -- : worker=0 ready
+I, [2020-06-01T09:31:50.880238 #11503]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601092955)
+I, [2020-06-01T09:31:50.880339 #11503]  INFO -- : forked child re-executing...
+I, [2020-06-01T09:31:51.323025 #11503]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T09:31:51.323204 #11503]  INFO -- : Refreshing Gem list
+I, [2020-06-01T09:31:54.007328 #11503]  INFO -- : master process ready
+I, [2020-06-01T09:31:54.009269 #11589]  INFO -- : worker=0 ready
+I, [2020-06-01T09:31:54.098881 #11464]  INFO -- : reaped #<Process::Status: pid 11473 exit 0> worker=0
+I, [2020-06-01T09:31:54.098972 #11464]  INFO -- : master complete
+150.246.40.189 - - [01/Jun/2020:09:33:04 +0000] "GET /unauthenticated HTTP/1.0" 302 100 0.0214
+150.246.40.189 - - [01/Jun/2020:09:33:04 +0000] "GET /users/sign_in HTTP/1.0" 200 2128 0.0523
+150.246.40.189 - - [01/Jun/2020:09:34:08 +0000] "POST /users/guest_sign_in HTTP/1.0" 302 87 0.0159
+150.246.40.189 - - [01/Jun/2020:09:34:08 +0000] "GET / HTTP/1.0" 200 5521 0.0600
+150.246.40.189 - - [01/Jun/2020:09:34:10 +0000] "GET /books/new HTTP/1.0" 200 4352 0.0494
+150.246.40.189 - - [01/Jun/2020:09:34:12 +0000] "GET /lists HTTP/1.0" 200 3277 0.0283
+150.246.40.189 - - [01/Jun/2020:09:34:14 +0000] "GET /users/2 HTTP/1.0" 200 1438 0.0377
+150.246.40.189 - - [01/Jun/2020:09:34:16 +0000] "GET / HTTP/1.0" 200 5437 0.0324
+I, [2020-06-01T09:47:45.016980 #11503]  INFO -- : reaped #<Process::Status: pid 11589 exit 0> worker=0
+I, [2020-06-01T09:47:45.017153 #11503]  INFO -- : master complete
+I, [2020-06-01T09:49:54.975928 #12960]  INFO -- : Refreshing Gem list
+I, [2020-06-01T09:49:57.671245 #12960]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T09:49:57.671946 #12960]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T09:49:57.680727 #12960]  INFO -- : master process ready
+I, [2020-06-01T09:49:57.687369 #12969]  INFO -- : worker=0 ready
+I, [2020-06-01T09:49:58.318447 #12999]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601094757)
+I, [2020-06-01T09:49:58.318536 #12999]  INFO -- : forked child re-executing...
+I, [2020-06-01T09:49:58.752242 #12999]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T09:49:58.752459 #12999]  INFO -- : Refreshing Gem list
+I, [2020-06-01T09:50:01.359931 #12999]  INFO -- : master process ready
+I, [2020-06-01T09:50:01.367884 #13059]  INFO -- : worker=0 ready
+I, [2020-06-01T09:50:01.452513 #12960]  INFO -- : reaped #<Process::Status: pid 12969 exit 0> worker=0
+I, [2020-06-01T09:50:01.452597 #12960]  INFO -- : master complete
+150.246.40.189 - - [01/Jun/2020:09:50:31 +0000] "GET / HTTP/1.0" 200 5437 0.0969
+150.246.40.189 - - [01/Jun/2020:09:50:38 +0000] "DELETE /users/sign_out HTTP/1.0" 302 87 0.0164
+150.246.40.189 - - [01/Jun/2020:09:50:38 +0000] "GET /unauthenticated HTTP/1.0" 302 100 0.0093
+150.246.40.189 - - [01/Jun/2020:09:50:38 +0000] "GET /users/sign_in HTTP/1.0" 200 2128 0.0200
+I, [2020-06-01T09:53:10.542787 #12999]  INFO -- : reaped #<Process::Status: pid 13059 exit 0> worker=0
+I, [2020-06-01T09:53:10.542932 #12999]  INFO -- : master complete
+I, [2020-06-01T09:55:25.538838 #14317]  INFO -- : Refreshing Gem list
+I, [2020-06-01T09:55:28.046829 #14317]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T09:55:28.047442 #14317]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T09:55:28.054752 #14317]  INFO -- : master process ready
+I, [2020-06-01T09:55:28.061676 #14326]  INFO -- : worker=0 ready
+I, [2020-06-01T09:55:28.388495 #14356]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601095324)
+I, [2020-06-01T09:55:28.388592 #14356]  INFO -- : forked child re-executing...
+I, [2020-06-01T09:55:28.827654 #14356]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T09:55:28.827865 #14356]  INFO -- : Refreshing Gem list
+I, [2020-06-01T09:55:31.555169 #14356]  INFO -- : master process ready
+I, [2020-06-01T09:55:31.556947 #14440]  INFO -- : worker=0 ready
+I, [2020-06-01T09:55:31.646905 #14317]  INFO -- : reaped #<Process::Status: pid 14326 exit 0> worker=0
+I, [2020-06-01T09:55:31.646996 #14317]  INFO -- : master complete
+150.246.40.189 - - [01/Jun/2020:09:57:04 +0000] "GET /unauthenticated HTTP/1.0" 302 100 0.0217
+150.246.40.189 - - [01/Jun/2020:09:57:04 +0000] "GET /users/sign_in HTTP/1.0" 200 2128 0.0464
+80.82.78.104 - - [01/Jun/2020:10:01:15 +0000] "GET /unauthenticated HTTP/1.0" 302 100 0.0038
+I, [2020-06-01T10:13:24.419787 #14356]  INFO -- : reaped #<Process::Status: pid 14440 exit 0> worker=0
+I, [2020-06-01T10:13:24.419906 #14356]  INFO -- : master complete
+I, [2020-06-01T10:15:27.415446 #15579]  INFO -- : Refreshing Gem list
+I, [2020-06-01T10:15:30.017965 #15579]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T10:15:30.018147 #15579]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T10:15:30.031510 #15579]  INFO -- : master process ready
+I, [2020-06-01T10:15:30.038320 #15588]  INFO -- : worker=0 ready
+I, [2020-06-01T10:15:30.972012 #15618]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601101338)
+I, [2020-06-01T10:15:30.972110 #15618]  INFO -- : forked child re-executing...
+I, [2020-06-01T10:15:31.406078 #15618]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T10:15:31.406282 #15618]  INFO -- : Refreshing Gem list
+I, [2020-06-01T10:15:34.107245 #15618]  INFO -- : master process ready
+I, [2020-06-01T10:15:34.111630 #15702]  INFO -- : worker=0 ready
+I, [2020-06-01T10:15:34.200193 #15579]  INFO -- : reaped #<Process::Status: pid 15588 exit 0> worker=0
+I, [2020-06-01T10:15:34.200801 #15579]  INFO -- : master complete
+150.246.40.189 - - [01/Jun/2020:10:19:23 +0000] "GET /unauthenticated HTTP/1.0" 302 100 0.0273
+150.246.40.189 - - [01/Jun/2020:10:19:23 +0000] "GET /users/sign_in HTTP/1.0" 200 2128 0.0865
+150.246.40.189 - - [01/Jun/2020:10:19:27 +0000] "GET /users/sign_in HTTP/1.0" 200 2036 0.0107
+I, [2020-06-01T10:29:40.935608 #15618]  INFO -- : reaped #<Process::Status: pid 15702 exit 0> worker=0
+I, [2020-06-01T10:29:40.935733 #15618]  INFO -- : master complete
+I, [2020-06-01T10:32:16.615405 #16876]  INFO -- : Refreshing Gem list
+I, [2020-06-01T10:32:19.093928 #16876]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T10:32:19.094486 #16876]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T10:32:19.102126 #16876]  INFO -- : master process ready
+I, [2020-06-01T10:32:19.109082 #16885]  INFO -- : worker=0 ready
+I, [2020-06-01T10:32:19.451472 #16915]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601103025)
+I, [2020-06-01T10:32:19.451576 #16915]  INFO -- : forked child re-executing...
+I, [2020-06-01T10:32:19.917841 #16915]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T10:32:19.918047 #16915]  INFO -- : Refreshing Gem list
+I, [2020-06-01T10:32:22.571298 #16915]  INFO -- : master process ready
+I, [2020-06-01T10:32:22.579171 #16999]  INFO -- : worker=0 ready
+I, [2020-06-01T10:32:22.666510 #16876]  INFO -- : reaped #<Process::Status: pid 16885 exit 0> worker=0
+I, [2020-06-01T10:32:22.666599 #16876]  INFO -- : master complete
+150.246.40.189 - - [01/Jun/2020:10:33:52 +0000] "GET /users/sign_in HTTP/1.0" 200 2036 0.0645
+I, [2020-06-01T10:40:08.156150 #16915]  INFO -- : reaped #<Process::Status: pid 16999 exit 0> worker=0
+I, [2020-06-01T10:40:08.156273 #16915]  INFO -- : master complete
+I, [2020-06-01T10:42:50.830882 #18123]  INFO -- : Refreshing Gem list
+I, [2020-06-01T10:42:53.320181 #18123]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T10:42:53.320839 #18123]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T10:42:53.328714 #18123]  INFO -- : master process ready
+I, [2020-06-01T10:42:53.335620 #18132]  INFO -- : worker=0 ready
+I, [2020-06-01T10:42:54.123446 #18162]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601104102)
+I, [2020-06-01T10:42:54.123538 #18162]  INFO -- : forked child re-executing...
+I, [2020-06-01T10:42:54.557541 #18162]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T10:42:54.557754 #18162]  INFO -- : Refreshing Gem list
+I, [2020-06-01T10:42:57.195287 #18162]  INFO -- : master process ready
+I, [2020-06-01T10:42:57.199112 #18222]  INFO -- : worker=0 ready
+I, [2020-06-01T10:42:57.288794 #18123]  INFO -- : reaped #<Process::Status: pid 18132 exit 0> worker=0
+I, [2020-06-01T10:42:57.288876 #18123]  INFO -- : master complete
+150.246.40.189 - - [01/Jun/2020:10:43:53 +0000] "GET /users/sign_in HTTP/1.0" 200 2036 0.0687
+150.246.40.189 - - [01/Jun/2020:10:46:22 +0000] "GET /users/sign_in HTTP/1.0" 200 2036 0.0068
+150.246.40.189 - - [01/Jun/2020:10:46:24 +0000] "GET /users/sign_in HTTP/1.0" 200 2036 0.0072
+150.246.40.189 - - [01/Jun/2020:10:48:30 +0000] "GET /users/sign_in HTTP/1.0" 200 2036 0.0072
+150.246.40.189 - - [01/Jun/2020:10:48:31 +0000] "GET /users/sign_in HTTP/1.0" 200 2036 0.0066
+150.246.40.189 - - [01/Jun/2020:10:48:33 +0000] "POST /users/guest_sign_in HTTP/1.0" 302 87 0.0169
+150.246.40.189 - - [01/Jun/2020:10:48:33 +0000] "GET / HTTP/1.0" 200 5521 0.0702
+150.246.40.189 - - [01/Jun/2020:10:48:35 +0000] "DELETE /users/sign_out HTTP/1.0" 302 87 0.0098
+150.246.40.189 - - [01/Jun/2020:10:48:35 +0000] "GET /unauthenticated HTTP/1.0" 302 100 0.0042
+150.246.40.189 - - [01/Jun/2020:10:48:35 +0000] "GET /users/sign_in HTTP/1.0" 200 2128 0.0071
+I, [2020-06-01T10:54:39.961172 #18162]  INFO -- : reaped #<Process::Status: pid 18222 exit 0> worker=0
+I, [2020-06-01T10:54:39.961295 #18162]  INFO -- : master complete
+I, [2020-06-01T11:20:30.233631 #19656]  INFO -- : Refreshing Gem list
+I, [2020-06-01T11:20:32.753226 #19656]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T11:20:32.753842 #19656]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T11:20:32.762402 #19656]  INFO -- : master process ready
+I, [2020-06-01T11:20:32.769221 #19665]  INFO -- : worker=0 ready
+I, [2020-06-01T11:20:32.994099 #19695]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601111841)
+I, [2020-06-01T11:20:32.994186 #19695]  INFO -- : forked child re-executing...
+I, [2020-06-01T11:20:33.446119 #19695]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T11:20:33.446332 #19695]  INFO -- : Refreshing Gem list
+I, [2020-06-01T11:20:36.123254 #19695]  INFO -- : master process ready
+I, [2020-06-01T11:20:36.127021 #19779]  INFO -- : worker=0 ready
+I, [2020-06-01T11:20:36.215389 #19656]  INFO -- : reaped #<Process::Status: pid 19665 exit 0> worker=0
+I, [2020-06-01T11:20:36.215483 #19656]  INFO -- : master complete
+150.246.40.189 - - [01/Jun/2020:11:22:26 +0000] "GET /users/sign_in HTTP/1.0" 200 2036 0.0687
+103.148.41.130 - - [01/Jun/2020:11:30:11 +0000] "GET /unauthenticated HTTP/1.0" 302 100 0.0046
+I, [2020-06-01T11:34:12.206015 #19695]  INFO -- : reaped #<Process::Status: pid 19779 exit 0> worker=0
+I, [2020-06-01T11:34:12.206137 #19695]  INFO -- : master complete
+I, [2020-06-01T11:36:18.542003 #21142]  INFO -- : Refreshing Gem list
+I, [2020-06-01T11:36:21.107270 #21142]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T11:36:21.107912 #21142]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T11:36:21.116091 #21142]  INFO -- : master process ready
+I, [2020-06-01T11:36:21.122938 #21151]  INFO -- : worker=0 ready
+I, [2020-06-01T11:36:21.622618 #21181]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601113430)
+I, [2020-06-01T11:36:21.622715 #21181]  INFO -- : forked child re-executing...
+I, [2020-06-01T11:36:22.069106 #21181]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T11:36:22.069325 #21181]  INFO -- : Refreshing Gem list
+I, [2020-06-01T11:36:24.807369 #21181]  INFO -- : master process ready
+I, [2020-06-01T11:36:24.814920 #21265]  INFO -- : worker=0 ready
+I, [2020-06-01T11:36:24.901701 #21142]  INFO -- : reaped #<Process::Status: pid 21151 exit 0> worker=0
+I, [2020-06-01T11:36:24.901793 #21142]  INFO -- : master complete
+80.82.78.104 - - [01/Jun/2020:11:37:33 +0000] "GET /unauthenticated HTTP/1.0" 302 100 0.0223
+150.246.40.189 - - [01/Jun/2020:11:45:32 +0000] "POST /users/guest_sign_in HTTP/1.0" 302 87 0.0338
+150.246.40.189 - - [01/Jun/2020:11:45:32 +0000] "GET / HTTP/1.0" 200 5521 0.0866
+I, [2020-06-01T11:47:01.168403 #21181]  INFO -- : reaped #<Process::Status: pid 21265 exit 0> worker=0
+I, [2020-06-01T11:47:01.168531 #21181]  INFO -- : master complete
+I, [2020-06-01T11:56:05.970793 #23394]  INFO -- : Refreshing Gem list
+I, [2020-06-01T11:56:08.511847 #23394]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T11:56:08.513584 #23394]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T11:56:08.521635 #23394]  INFO -- : master process ready
+I, [2020-06-01T11:56:08.528408 #23403]  INFO -- : worker=0 ready
+I, [2020-06-01T11:56:08.990505 #23433]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601115415)
+I, [2020-06-01T11:56:08.990620 #23433]  INFO -- : forked child re-executing...
+I, [2020-06-01T11:56:09.434934 #23433]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T11:56:09.435139 #23433]  INFO -- : Refreshing Gem list
+I, [2020-06-01T11:56:12.363572 #23433]  INFO -- : master process ready
+I, [2020-06-01T11:56:12.370352 #23493]  INFO -- : worker=0 ready
+I, [2020-06-01T11:56:12.456799 #23394]  INFO -- : reaped #<Process::Status: pid 23403 exit 0> worker=0
+I, [2020-06-01T11:56:12.456876 #23394]  INFO -- : master complete
+150.246.40.189 - - [01/Jun/2020:11:57:30 +0000] "GET / HTTP/1.0" 200 5437 0.1187
+150.246.40.189 - - [01/Jun/2020:11:57:37 +0000] "DELETE /users/sign_out HTTP/1.0" 302 87 0.0162
+150.246.40.189 - - [01/Jun/2020:11:57:37 +0000] "GET /unauthenticated HTTP/1.0" 302 100 0.0089
+150.246.40.189 - - [01/Jun/2020:11:57:37 +0000] "GET /users/sign_in HTTP/1.0" 200 2128 0.0188
+I, [2020-06-01T12:02:24.803841 #24555]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:fd 10>}] (in /var/www/money_book/releases/20200601120033)
+I, [2020-06-01T12:02:24.804782 #24555]  INFO -- : forked child re-executing...
+I, [2020-06-01T12:02:25.266275 #24555]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T12:02:25.266485 #24555]  INFO -- : Refreshing Gem list
+I, [2020-06-01T12:02:28.303214 #24555]  INFO -- : master process ready
+I, [2020-06-01T12:02:28.306962 #24639]  INFO -- : worker=0 ready
+I, [2020-06-01T12:02:28.396587 #23433]  INFO -- : reaped #<Process::Status: pid 23493 exit 0> worker=0
+I, [2020-06-01T12:02:28.396700 #23433]  INFO -- : master complete
+150.246.40.189 - - [01/Jun/2020:12:02:59 +0000] "GET /users/sign_in HTTP/1.0" 200 2036 0.0773
+I, [2020-06-01T12:03:48.351961 #24555]  INFO -- : reaped #<Process::Status: pid 24639 exit 0> worker=0
+I, [2020-06-01T12:03:48.352124 #24555]  INFO -- : master complete
+I, [2020-06-01T12:05:54.832038 #25677]  INFO -- : Refreshing Gem list
+I, [2020-06-01T12:05:57.459786 #25677]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T12:05:57.459943 #25677]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T12:05:57.469979 #25677]  INFO -- : master process ready
+I, [2020-06-01T12:05:57.476905 #25686]  INFO -- : worker=0 ready
+I, [2020-06-01T12:05:58.013977 #25716]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "deployment", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601120405)
+I, [2020-06-01T12:05:58.014066 #25716]  INFO -- : forked child re-executing...
+I, [2020-06-01T12:05:58.440136 #25716]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T12:05:58.440344 #25716]  INFO -- : Refreshing Gem list
+I, [2020-06-01T12:06:01.075290 #25716]  INFO -- : master process ready
+I, [2020-06-01T12:06:01.079201 #25787]  INFO -- : worker=0 ready
+I, [2020-06-01T12:06:01.168653 #25677]  INFO -- : reaped #<Process::Status: pid 25686 exit 0> worker=0
+I, [2020-06-01T12:06:01.168761 #25677]  INFO -- : master complete
+150.246.40.189 - - [01/Jun/2020:12:07:35 +0000] "GET /users/sign_in HTTP/1.0" 200 2036 0.0708
+79.111.35.155 - - [01/Jun/2020:12:16:43 +0000] "GET /unauthenticated HTTP/1.0" 302 100 0.0045
+I, [2020-06-01T12:22:05.629272 #25716]  INFO -- : reaped #<Process::Status: pid 25787 exit 0> worker=0
+I, [2020-06-01T12:22:05.629415 #25716]  INFO -- : master complete
+I, [2020-06-01T12:25:38.214414 #26889]  INFO -- : Refreshing Gem list
+I, [2020-06-01T12:25:40.460233 #26889]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-01T12:25:40.460861 #26889]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T12:25:40.468411 #26889]  INFO -- : master process ready
+I, [2020-06-01T12:25:40.475156 #26898]  INFO -- : worker=0 ready
+I, [2020-06-01T12:25:41.006445 #26928]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "production", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200601122344)
+I, [2020-06-01T12:25:41.006550 #26928]  INFO -- : forked child re-executing...
+I, [2020-06-01T12:25:41.445824 #26928]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T12:25:41.447106 #26928]  INFO -- : Refreshing Gem list
+I, [2020-06-01T12:25:43.773781 #26928]  INFO -- : master process ready
+I, [2020-06-01T12:25:43.787253 #26988]  INFO -- : worker=0 ready
+I, [2020-06-01T12:25:43.865978 #26889]  INFO -- : reaped #<Process::Status: pid 26898 exit 0> worker=0
+I, [2020-06-01T12:25:43.866055 #26889]  INFO -- : master complete
+I, [2020-06-01T13:03:16.242491 #28106]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "production", "-D", {10=>#<Kgio::UNIXServer:fd 10>}] (in /var/www/money_book/releases/20200601130122)
+I, [2020-06-01T13:03:16.243689 #28106]  INFO -- : forked child re-executing...
+I, [2020-06-01T13:03:16.704060 #28106]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-01T13:03:16.704252 #28106]  INFO -- : Refreshing Gem list
+I, [2020-06-01T13:03:19.664371 #28106]  INFO -- : master process ready
+I, [2020-06-01T13:03:19.666628 #28190]  INFO -- : worker=0 ready
+I, [2020-06-01T13:03:19.764137 #26928]  INFO -- : reaped #<Process::Status: pid 26988 exit 0> worker=0
+I, [2020-06-01T13:03:19.764281 #26928]  INFO -- : master complete
+I, [2020-06-04T08:11:58.313695 #28106]  INFO -- : reaped #<Process::Status: pid 28190 exit 0> worker=0
+I, [2020-06-04T08:11:58.313817 #28106]  INFO -- : master complete
+I, [2020-06-04T08:14:15.903065 #9870]  INFO -- : Refreshing Gem list
+I, [2020-06-04T08:14:18.578028 #9870]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-04T08:14:18.580735 #9870]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T08:14:18.588944 #9870]  INFO -- : master process ready
+I, [2020-06-04T08:14:18.595677 #9879]  INFO -- : worker=0 ready
+I, [2020-06-04T08:14:18.825816 #9909]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "production", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200604081227)
+I, [2020-06-04T08:14:18.825925 #9909]  INFO -- : forked child re-executing...
+I, [2020-06-04T08:14:19.313555 #9909]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T08:14:19.313767 #9909]  INFO -- : Refreshing Gem list
+I, [2020-06-04T08:14:21.963331 #9909]  INFO -- : master process ready
+I, [2020-06-04T08:14:21.967038 #9993]  INFO -- : worker=0 ready
+I, [2020-06-04T08:14:22.055741 #9870]  INFO -- : reaped #<Process::Status: pid 9879 exit 0> worker=0
+I, [2020-06-04T08:14:22.055893 #9870]  INFO -- : master complete
+I, [2020-06-04T10:06:21.731021 #9909]  INFO -- : reaped #<Process::Status: pid 9993 exit 0> worker=0
+I, [2020-06-04T10:06:21.731151 #9909]  INFO -- : master complete
+I, [2020-06-04T10:08:44.353199 #17455]  INFO -- : Refreshing Gem list
+I, [2020-06-04T10:08:46.903756 #17455]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-04T10:08:46.904487 #17455]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T10:08:46.912515 #17455]  INFO -- : master process ready
+I, [2020-06-04T10:08:46.919350 #17464]  INFO -- : worker=0 ready
+I, [2020-06-04T10:08:47.106893 #17494]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "production", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200604100649)
+I, [2020-06-04T10:08:47.106988 #17494]  INFO -- : forked child re-executing...
+I, [2020-06-04T10:08:47.564050 #17494]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T10:08:47.564251 #17494]  INFO -- : Refreshing Gem list
+I, [2020-06-04T10:08:50.251296 #17494]  INFO -- : master process ready
+I, [2020-06-04T10:08:50.255097 #17578]  INFO -- : worker=0 ready
+I, [2020-06-04T10:08:50.344761 #17455]  INFO -- : reaped #<Process::Status: pid 17464 exit 0> worker=0
+I, [2020-06-04T10:08:50.344852 #17455]  INFO -- : master complete
+/home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:205:in `pid=': Already running on PID:17494 (or pid=/var/www/money_book/shared/tmp/pids/unicorn.pid is stale) (ArgumentError)
+	from /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:137:in `start'
+	from /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/unicorn-5.4.1/bin/unicorn_rails:209:in `<top (required)>'
+	from /home/ec2-user/.rbenv/versions/2.5.1/bin/unicorn_rails:23:in `load'
+	from /home/ec2-user/.rbenv/versions/2.5.1/bin/unicorn_rails:23:in `<main>'
+I, [2020-06-04T11:31:07.959985 #17494]  INFO -- : reaped #<Process::Status: pid 17578 exit 0> worker=0
+I, [2020-06-04T11:31:07.960111 #17494]  INFO -- : master complete
+I, [2020-06-04T11:36:12.244871 #19106]  INFO -- : Refreshing Gem list
+I, [2020-06-04T11:36:14.512554 #19106]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-04T11:36:14.515884 #19106]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T11:36:14.526295 #19106]  INFO -- : master process ready
+I, [2020-06-04T11:36:14.533317 #19115]  INFO -- : worker=0 ready
+I, [2020-06-04T11:36:15.578634 #19145]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "production", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200604113416)
+I, [2020-06-04T11:36:15.578746 #19145]  INFO -- : forked child re-executing...
+I, [2020-06-04T11:36:16.012336 #19145]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T11:36:16.012564 #19145]  INFO -- : Refreshing Gem list
+I, [2020-06-04T11:36:18.693799 #19145]  INFO -- : master process ready
+I, [2020-06-04T11:36:18.699852 #19205]  INFO -- : worker=0 ready
+I, [2020-06-04T11:36:18.785204 #19106]  INFO -- : reaped #<Process::Status: pid 19115 exit 0> worker=0
+I, [2020-06-04T11:36:18.785284 #19106]  INFO -- : master complete
+I, [2020-06-04T11:44:57.577830 #19145]  INFO -- : reaped #<Process::Status: pid 19205 exit 0> worker=0
+I, [2020-06-04T11:44:57.580755 #19145]  INFO -- : master complete
+I, [2020-06-04T11:47:16.144898 #20560]  INFO -- : Refreshing Gem list
+I, [2020-06-04T11:47:18.708535 #20560]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-04T11:47:18.708702 #20560]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T11:47:18.717855 #20560]  INFO -- : master process ready
+I, [2020-06-04T11:47:18.724584 #20569]  INFO -- : worker=0 ready
+I, [2020-06-04T11:47:19.502976 #20599]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "production", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200604114517)
+I, [2020-06-04T11:47:19.503064 #20599]  INFO -- : forked child re-executing...
+I, [2020-06-04T11:47:19.940670 #20599]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T11:47:19.940872 #20599]  INFO -- : Refreshing Gem list
+I, [2020-06-04T11:47:22.623207 #20599]  INFO -- : master process ready
+I, [2020-06-04T11:47:22.627053 #20659]  INFO -- : worker=0 ready
+I, [2020-06-04T11:47:22.715585 #20560]  INFO -- : reaped #<Process::Status: pid 20569 exit 0> worker=0
+I, [2020-06-04T11:47:22.715675 #20560]  INFO -- : master complete
+I, [2020-06-04T11:54:06.575387 #20599]  INFO -- : reaped #<Process::Status: pid 20659 exit 0> worker=0
+I, [2020-06-04T11:54:06.582245 #20599]  INFO -- : master complete
+I, [2020-06-04T11:56:17.582710 #22132]  INFO -- : Refreshing Gem list
+I, [2020-06-04T11:56:20.199452 #22132]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-04T11:56:20.199692 #22132]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T11:56:20.208771 #22132]  INFO -- : master process ready
+I, [2020-06-04T11:56:20.215794 #22141]  INFO -- : worker=0 ready
+I, [2020-06-04T11:56:21.365484 #22171]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "production", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200604115420)
+I, [2020-06-04T11:56:21.365571 #22171]  INFO -- : forked child re-executing...
+I, [2020-06-04T11:56:21.798712 #22171]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T11:56:21.798914 #22171]  INFO -- : Refreshing Gem list
+I, [2020-06-04T11:56:24.330722 #22171]  INFO -- : master process ready
+I, [2020-06-04T11:56:24.337455 #22232]  INFO -- : worker=0 ready
+I, [2020-06-04T11:56:24.423177 #22132]  INFO -- : reaped #<Process::Status: pid 22141 exit 0> worker=0
+I, [2020-06-04T11:56:24.423255 #22132]  INFO -- : master complete
+I, [2020-06-04T12:15:49.745067 #22171]  INFO -- : reaped #<Process::Status: pid 22232 exit 0> worker=0
+I, [2020-06-04T12:15:49.745196 #22171]  INFO -- : master complete
+I, [2020-06-04T12:17:51.955812 #23497]  INFO -- : Refreshing Gem list
+I, [2020-06-04T12:17:54.208514 #23497]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-04T12:17:54.210405 #23497]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T12:17:54.222737 #23497]  INFO -- : master process ready
+I, [2020-06-04T12:17:54.229451 #23506]  INFO -- : worker=0 ready
+I, [2020-06-04T12:17:54.443918 #23536]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "production", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200604121604)
+I, [2020-06-04T12:17:54.444101 #23536]  INFO -- : forked child re-executing...
+I, [2020-06-04T12:17:54.917676 #23536]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T12:17:54.917881 #23536]  INFO -- : Refreshing Gem list
+I, [2020-06-04T12:17:57.591318 #23536]  INFO -- : master process ready
+I, [2020-06-04T12:17:57.594990 #23620]  INFO -- : worker=0 ready
+I, [2020-06-04T12:17:57.683802 #23497]  INFO -- : reaped #<Process::Status: pid 23506 exit 0> worker=0
+I, [2020-06-04T12:17:57.683885 #23497]  INFO -- : master complete
+I, [2020-06-04T12:28:34.202291 #23536]  INFO -- : reaped #<Process::Status: pid 23620 exit 0> worker=0
+I, [2020-06-04T12:28:34.202430 #23536]  INFO -- : master complete
+I, [2020-06-04T12:30:56.477247 #24964]  INFO -- : Refreshing Gem list
+I, [2020-06-04T12:30:59.208150 #24964]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-04T12:30:59.209788 #24964]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T12:30:59.233645 #24964]  INFO -- : master process ready
+I, [2020-06-04T12:30:59.240726 #24973]  INFO -- : worker=0 ready
+I, [2020-06-04T12:30:59.560718 #25003]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "production", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200604122906)
+I, [2020-06-04T12:30:59.560812 #25003]  INFO -- : forked child re-executing...
+I, [2020-06-04T12:31:00.032284 #25003]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T12:31:00.032511 #25003]  INFO -- : Refreshing Gem list
+I, [2020-06-04T12:31:02.723309 #25003]  INFO -- : master process ready
+I, [2020-06-04T12:31:02.727042 #25087]  INFO -- : worker=0 ready
+I, [2020-06-04T12:31:02.816095 #24964]  INFO -- : reaped #<Process::Status: pid 24973 exit 0> worker=0
+I, [2020-06-04T12:31:02.816195 #24964]  INFO -- : master complete
+I, [2020-06-04T12:53:19.268738 #25003]  INFO -- : reaped #<Process::Status: pid 25087 exit 0> worker=0
+I, [2020-06-04T12:53:19.268860 #25003]  INFO -- : master complete
+I, [2020-06-04T12:55:25.813096 #26407]  INFO -- : Refreshing Gem list
+I, [2020-06-04T12:55:28.283161 #26407]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-04T12:55:28.286551 #26407]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T12:55:28.295216 #26407]  INFO -- : master process ready
+I, [2020-06-04T12:55:28.302170 #26416]  INFO -- : worker=0 ready
+I, [2020-06-04T12:55:28.665516 #26446]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "production", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200604125333)
+I, [2020-06-04T12:55:28.665620 #26446]  INFO -- : forked child re-executing...
+I, [2020-06-04T12:55:29.127657 #26446]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T12:55:29.127851 #26446]  INFO -- : Refreshing Gem list
+I, [2020-06-04T12:55:31.807238 #26446]  INFO -- : master process ready
+I, [2020-06-04T12:55:31.815132 #26530]  INFO -- : worker=0 ready
+I, [2020-06-04T12:55:31.901617 #26407]  INFO -- : reaped #<Process::Status: pid 26416 exit 0> worker=0
+I, [2020-06-04T12:55:31.901700 #26407]  INFO -- : master complete
+I, [2020-06-04T12:57:18.571293 #26446]  INFO -- : reaped #<Process::Status: pid 26530 exit 0> worker=0
+I, [2020-06-04T12:57:18.571480 #26446]  INFO -- : master complete
+I, [2020-06-04T13:01:38.777268 #27652]  INFO -- : Refreshing Gem list
+I, [2020-06-04T13:01:41.373139 #27652]  INFO -- : unlinking existing socket=/var/www/money_book/shared/tmp/sockets/unicorn.sock
+I, [2020-06-04T13:01:41.374807 #27652]  INFO -- : listening on addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T13:01:41.383691 #27652]  INFO -- : master process ready
+I, [2020-06-04T13:01:41.390415 #27661]  INFO -- : worker=0 ready
+I, [2020-06-04T13:01:41.751541 #27691]  INFO -- : executing ["/var/www/money_book/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/money_book/current/config/unicorn.rb", "-E", "production", "-D", {10=>#<Kgio::UNIXServer:/var/www/money_book/shared/tmp/sockets/unicorn.sock>}] (in /var/www/money_book/releases/20200604125942)
+I, [2020-06-04T13:01:41.752100 #27691]  INFO -- : forked child re-executing...
+I, [2020-06-04T13:01:42.210413 #27691]  INFO -- : inherited addr=/var/www/money_book/shared/tmp/sockets/unicorn.sock fd=10
+I, [2020-06-04T13:01:42.210619 #27691]  INFO -- : Refreshing Gem list
+I, [2020-06-04T13:01:44.923316 #27691]  INFO -- : master process ready
+I, [2020-06-04T13:01:44.927105 #27775]  INFO -- : worker=0 ready
+I, [2020-06-04T13:01:45.015678 #27652]  INFO -- : reaped #<Process::Status: pid 27661 exit 0> worker=0
+I, [2020-06-04T13:01:45.015772 #27652]  INFO -- : master complete
