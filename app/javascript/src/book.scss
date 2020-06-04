@@ -7,7 +7,6 @@
   font-family: 'Helvetica Neue','Helvetica','Arial';
   .header{
     height: 130px;
-    width: 100%;
     color: #0d5dd2;
     box-shadow: 0 2px 3px rgba(0,0,0,0.1), 0 2px 3px rgba(0,0,0,0.1);
     &__top {
@@ -30,7 +29,6 @@
       font-weight: bold;
     }
     &__bottom {
-      width: 100%;
       text-align: center;
       margin-top: 20px;
       a{
@@ -43,13 +41,12 @@
   }
 
   .contents {
-    width: 100%;
     display: flex;
     margin-top: 20px;
     margin-left: 200px;
     margin-right: 200px;
     &__left {
-      margin-right: 100px;
+      padding-right: 100px;
       &__title {
         border-bottom: solid 2px darkorange;
         width: 350px;
@@ -58,7 +55,6 @@
       &__income, &__expense {
         display: flex;
         height: 50px;
-        width: 350px;
         &__title {
           border: solid 2px #ddd;
           line-height: 50px;
@@ -70,7 +66,6 @@
         &__price {
           border: solid 2px #ddd;
           border-left: none;
-          padding-left: 100px;
           text-align: right;
           width: 200px;
           line-height: 50px;
@@ -81,7 +76,6 @@
       &__balance {
         display: flex;
         height: 50px;
-        width: 350px;
         &__title {
           border: solid 2px #ddd;
           line-height: 50px;
@@ -92,7 +86,6 @@
         &__price {
           border: solid 2px #ddd;
           border-left: none;
-          padding-left: 100px;
           text-align: right;
           width: 200px;
           line-height: 50px;
@@ -102,6 +95,7 @@
     }
     &__right {
       display: flex;
+      margin:0 0 0 auto;
       &__expense {
         margin-right: 30px;
       }
