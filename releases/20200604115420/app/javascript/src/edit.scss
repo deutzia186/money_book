@@ -1,0 +1,216 @@
+.tab-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  .tab.is-active {
+    background: lightskyblue;
+    color: #FFF;
+  }
+  .tab {
+    width: 300px;
+    padding: 5px;
+    list-style: none;
+    border: solid 1px #bbb;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}
+.panel-group {
+  height: 100px;
+  border-top: none;
+  .panel.is-show {
+    display: block;
+  }
+  .panel {
+    display: none;
+  }
+
+}
+
+.conteiner {
+  display: flex;
+  justify-content: center;
+  .input-box {
+    text-align: center;
+    margin-top: 10px;
+    .date {
+      display: flex;
+      margin-top: 10px;
+      .title {
+        border: 1px solid #bbb;
+        padding: 10px;
+        background-color: #f5f5f5;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 6px;
+
+      }
+      &__detail {
+        text-align: center;
+        border: 1px solid #bbb;
+        border-left: none;
+        width: 300px;
+        border-radius: 6px;
+      }
+    }
+    .category {
+      display: flex;
+      margin-top: 10px;
+      .title {
+        border: 1px solid #bbb;
+        padding: 10px;
+        background-color: #f5f5f5;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 6px;
+      }
+      #book_category_id {
+        text-indent: 45%;
+        border: 1px solid #bbb;
+        border-left: none;
+        width: 300px;
+        background-color: white;
+      }
+    }
+
+    .price {
+      display: flex;
+      margin-top: 10px;
+      .title {
+        border: 1px solid #bbb;
+        padding: 10px;
+        background-color: #f5f5f5;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 6px;
+      }
+      &__detail{
+        -webkit-box-shadow: 0 0 0px 1000px white inset;
+        text-align: center;
+        border: 1px solid #bbb;
+        border-left: none;
+        width: 300px;
+        border-radius: 6px;
+      }
+    }
+    .memo {
+      display: flex;
+      margin-top: 10px;
+      .title {
+        border: 1px solid #bbb;
+        padding: 10px;
+        background-color: #f5f5f5;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 6px;
+      }
+      &__detail {
+        -webkit-box-shadow: 0 0 0px 1000px white inset;
+        text-align: center;
+        border: 1px solid #bbb;
+        border-left: none;
+        width: 300px;
+        border-radius: 6px;
+      }
+    }
+    .image {
+      display: flex;
+      margin-top: 10px;
+      .title {
+        border: 1px solid #bbb;
+        padding: 10px;
+        background-color: #f5f5f5;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 6px;
+      }
+      
+      #img_field-expense {
+        border: 1px solid #bbb;
+        padding: 0;
+        cursor: pointer;
+        width: 300px;
+        transition: 0.3s ease-out;
+        border-left: none;
+        border-radius: 6px;
+      }       
+      #img_field-expense i {
+        font-size: 20px;
+        color: #aaa;
+        line-height: 50px;
+        transition: 0.3s ease-out;
+      }       
+      #img_field-expense i.add {
+        display: none;
+        font-size: 50px;
+        position: absolute;
+        top: -90px;
+        right: 15px;
+      }       
+      #img_field-expense:hover {
+        background-color: lightskyblue;
+        transition: 0.3s ease-out;
+        opacity: 0.9;
+      }       
+      #img_field-expense:hover i {
+        transition: 0.3s ease-out;
+        display: block;
+        color: #fff;
+      }
+
+      #img_field-income {
+        border: 1px solid #bbb;
+        padding: 0;
+        cursor: pointer;
+        width: 300px;
+        transition: 0.3s ease-out;
+        border-left: none;
+      }
+      #img_field-income i {
+        font-size: 20px;
+        color: #aaa;
+        line-height: 50px;
+        transition: 0.3s ease-out;
+      }      
+      #img_field-income i.add {
+        display: none;
+        font-size: 50px;
+        position: absolute;
+        top: -90px;
+        right: 15px;
+      }       
+      #img_field-income:hover {
+        background-color: lightskyblue;
+        transition: 0.3s ease-out;
+        opacity: 0.9;
+      }       
+      #img_field-income:hover i {
+        transition: 0.3s ease-out;
+        display: block;
+        color: #fff;
+      }
+    }
+    .checkbox {
+      padding-left: 100px;
+    }
+
+
+    .register {
+      margin-top: 20px;
+      background:#0d5dd2;
+      border: 1px solid #bbb;
+      width: 50%;
+      border-radius: 6px;
+      &__button {
+        background:#0d5dd2;
+        border: 1px solid #0d5dd2;
+        color: white;
+        width: 100%;
+        line-height: 30px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+  }
+}

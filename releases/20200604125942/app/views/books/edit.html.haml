@@ -1,0 +1,169 @@
+.warapper
+  = render "shared/header"
+  .tab-group
+    - if @book.select == "支出"
+      .tab.is-active 支出
+      .tab 収入
+    - else
+      .tab 支出
+      .tab.is-active 収入
+
+  .panel-group
+    - if @book.select == "支出"
+      .panel.is-show
+        = form_with(model: @book, local: true) do |form|
+          .conteiner
+            .input-box
+              = form.hidden_field :select, value:"支出"
+              .date
+                .title
+                  日付
+                = form.date_field :date, class: 'date__detail'
+              .category
+                .title
+                  項目
+                = form.collection_select :category_id, Category.where(id: 1..15).order(id: :ASC), :id, :name, prompt: "--", class: 'category__detail'
+              .price
+                .title
+                  金額
+                = form.number_field :price, placeholder: "", class: 'price__detail'
+              .memo
+                .title
+                  メモ
+                = form.text_field :memo, placeholder: "", class: 'memo__detail'
+              .image
+                .title
+                  画像
+                .image-filed
+                  #img_field-expense{onclick: "$('#file-expense').click()"}
+                    - if @book.image.url.present?
+                      = image_tag(@book.image.url)
+                    - else
+                      %i.fas.fa-image
+                  = form.file_field :image, class: "image", style: "display:none;", id: "file-expense"
+                  = form.hidden_field :image_cache
+
+              - if @book.image.url.present?
+                .checkbox
+                  = form.check_box :remove_image
+                  = form.label "画像を削除する"
+              %button.register{type: "button"}
+                = form.submit "更新", class:'register__button'
+      .panel
+        = form_with(model: @book, local: true) do |form|
+          .conteiner
+            .input-box
+              = form.hidden_field :select, value: "収入"
+              .date
+                .title
+                  日付
+                = form.date_field :date, class: 'date__detail'
+              .category
+                .title
+                  項目
+                = form.collection_select :category_id, Category.where(id: 16..23).order(id: :ASC), :id, :name, prompt: "--", class: 'category__detail'
+              .price
+                .title
+                  金額
+                = form.number_field :price, placeholder: "", class: 'price__detail'
+              .memo
+                .title
+                  メモ
+                = form.text_field :memo, placeholder: "", class: 'memo__detail'
+              .image
+                .title
+                  画像
+                .image-filed
+                  #img_field-income{onclick: "$('#file-income').click()"}
+                    - if @book.image.url.present?
+                      = image_tag(@book.image.url)
+                    - else
+                      %i.fas.fa-image
+                  = form.file_field :image, class: "image", style: "display:none;", id: "file-income"
+                  = form.hidden_field :image_cache
+              - if @book.image.url.present?
+                .checkbox
+                  = form.check_box :remove_image
+                  = form.label "画像を削除する"
+              %button.register{type: "button"}
+                = form.submit "更新", class:'register__button'
+
+    - else
+      .panel
+        = form_with(model: @book, local: true) do |form|
+          .conteiner
+            .input-box
+              = form.hidden_field :select, value:"支出"
+              .date
+                .title
+                  日付
+                = form.date_field :date, class: 'date__detail'
+              .category
+                .title
+                  項目
+                = form.collection_select :category_id, Category.where(id: 1..15).order(id: :ASC), :id, :name, prompt: "--", class: 'category__detail'
+              .price
+                .title
+                  金額
+                = form.number_field :price, placeholder: "", class: 'price__detail'
+              .memo
+                .title
+                  メモ
+                = form.text_field :memo, placeholder: "", class: 'memo__detail'
+              .image
+                .title
+                  画像
+                .image-filed
+                  #img_field-expense{onclick: "$('#file-expense').click()"}
+                    - if @book.image.url.present?
+                      = image_tag(@book.image.url)
+                    - else
+                      %i.fas.fa-image
+                  = form.file_field :image, class: "image", style: "display:none;", id: "file-expense"
+                  = form.hidden_field :image_cache
+              - if @book.image.url.present?
+                .checkbox
+                  = form.check_box :remove_image
+                  = form.label "画像を削除する"
+              %button.register{type: "button"}
+                = form.submit "更新", class:'register__button'
+      .panel.is-show
+        = form_with(model: @book, local: true) do |form|
+          .conteiner
+            .input-box
+              = form.hidden_field :select, value: "収入"
+              .date
+                .title
+                  日付
+                = form.date_field :date, class: 'date__detail'
+              .category
+                .title
+                  項目
+                = form.collection_select :category_id, Category.where(id: 16..23).order(id: :ASC), :id, :name, prompt: "--", class: 'category__detail'
+              .price
+                .title
+                  金額
+                = form.number_field :price, placeholder: "", class: 'price__detail'
+              .memo
+                .title
+                  メモ
+                = form.text_field :memo, placeholder: "", class: 'memo__detail'
+              .image
+                .title
+                  画像
+                .image-filed
+                  #img_field-income{onclick: "$('#file-income').click()"}
+                    - if @book.image.url.present?
+                      = image_tag(@book.image.url)
+                    - else
+                      %i.fas.fa-image
+                  = form.file_field :image, class: "image", style: "display:none;", id: "file-income"
+                  = form.hidden_field :image_cache
+              - if @book.image.url.present?
+                .checkbox
+                  = form.check_box :remove_image
+                  = form.label "画像を削除する"
+              %button.register{type: "button"}
+                = form.submit "更新", class:'register__button'
+
+    
