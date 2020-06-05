@@ -42,26 +42,26 @@
 
   .contents {
     display: flex;
+    justify-content: space-between;
     margin-top: 20px;
     margin-left: 200px;
     margin-right: 200px;
     &__left {
-      padding-right: 50px;
+      width: 40%;
+      margin-right: 50px;
       &__title {
         border-bottom: solid 2px darkorange;
-        width: 300%;
         margin-bottom: 10px;
       }
       &__income, &__expense {
         display: flex;
         height: 50px;
-        width: 300%;
+        width: 100%;
         &__title {
           border: solid 2px #ddd;
           line-height: 50px;
           background-color: #eee;
-          // width: 150px;
-          width: 100%;
+          width: 40%;
           text-align: center;
           border-bottom: none;
         }
@@ -69,8 +69,7 @@
           border: solid 2px #ddd;
           border-left: none;
           text-align: right;
-          // width: 200px;
-          width: 200%;
+          width: 60%;
           line-height: 50px;
           padding-right: 10px;
           border-bottom: none;
@@ -79,21 +78,19 @@
       &__balance {
         display: flex;
         height: 50px;
-        width: 300%;
+        width: 100%;
         &__title {
           border: solid 2px #ddd;
           line-height: 50px;
           background-color: #eee;
-          // width: 150px;
-          width: 100%;
+          width: 40%;
           text-align: center;
         }
         &__price {
           border: solid 2px #ddd;
           border-left: none;
           text-align: right;
-          // width: 200px;
-          width: 200%;
+          width: 60%;
           line-height: 50px;
           padding-right: 10px;
         }
@@ -101,10 +98,10 @@
     }
     &__right {
       display: flex;
-      margin:0 0 0 auto;
-      
+      // width: 60%;
+      // margin:0 0 0 auto;
       &__expense {
-        margin-right: 30px;
+        margin-right: 50px;
       }
       &__income {
       }
