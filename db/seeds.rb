@@ -1,4 +1,4 @@
-Category.create!(
+Category.first_or_create(
   [
     {
       name: '食費',
