@@ -70,3 +70,7 @@ jobs:
       - run:
           name: run rubocop
           command: bundle exec rubocop
+
+      - add_ssh_keys:
+        fingerprints:
+          - "1d:f2:af:ac:ee:c6:61:cf:51:04:7e:9c:0c:8b:89:a0"
