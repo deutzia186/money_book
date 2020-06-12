@@ -53,21 +53,6 @@ jobs:
           name: Rspec
           command: bundle exec rspec
 
-      # - run:
-      #   name: Run rspec in parallel
-      #   command: |
-      #     bundle exec rspec --profile 10 \
-      #                       --format RspecJunitFormatter \
-      #                       --out test_results/rspec.xml \
-      #                       --format progress \
-      #                       $(circleci tests glob "spec/**/*_spec.rb" | circleci tests split --split-by=timings)
-
-      # # collect reports
-      # - store_test_results:
-      #     path: /tmp/test-results
-      # - store_artifacts:
-      #     path: /tmp/test-results
-          # destination: test-results
 
   #     - add_ssh_keys:
   #       fingerprints:
