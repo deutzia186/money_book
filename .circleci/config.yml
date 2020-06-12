@@ -48,7 +48,11 @@ jobs:
       - run: bundle exec rake db:create
       - run: bundle exec rake db:schema:load
 
-      # # run tests!
+      # Rspec test
+      - run:
+          name: Rspec
+          command: bundle exec rspec
+
       # - run:
       #   name: Run rspec in parallel
       #   command: |
