@@ -39,9 +39,9 @@ jobs:
       - run: bundle exec rake db:schema:load
 
       # テスト
-      - run:
-          name: Rspec
-          command: bundle exec rspec
+      # - run:
+      #     name: Rspec
+      #     command: bundle exec rspec
 
       # デプロイ
       - deploy:
