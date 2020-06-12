@@ -49,15 +49,9 @@ jobs:
       - run: bundle exec rake db:schema:load
 
       # # Rspec test
-      # - run:
-      #     name: Rspec
-      #     command: bundle exec rspec
-
-      # run rubocop
       - run:
-          name: run rubocop
-          command: bundle exec rubocop
-
+          name: Rspec
+          command: bundle exec rspec
 
   #     - add_ssh_keys:
   #       fingerprints:
