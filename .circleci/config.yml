@@ -48,10 +48,15 @@ jobs:
       - run: bundle exec rake db:create
       - run: bundle exec rake db:schema:load
 
-      # Rspec test
+      # # Rspec test
+      # - run:
+      #     name: Rspec
+      #     command: bundle exec rspec
+
+      # run rubocop
       - run:
-          name: Rspec
-          command: bundle exec rspec
+        name: run rubocop
+        command: bundle exec rubocop
 
 
   #     - add_ssh_keys:
