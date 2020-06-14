@@ -36,6 +36,8 @@ group :development, :test do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano3-unicorn'
+  gem 'rspec-rails'
+  gem "rspec_junit_formatter"
 end
 
 group :development do
@@ -67,7 +69,6 @@ gem "omniauth-rails_csrf_protection"
 gem 'payjp'
 gem 'devise'
 gem 'erb2haml'
-gem 'rspec-rails'
 gem 'pry-rails'
 gem 'dotenv-rails'
 gem 'kaminari'

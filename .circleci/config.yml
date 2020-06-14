@@ -1,0 +1,68 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      - image: circleci/ruby:2.5.1-node-browsers
+
+        environment:
+          RAILS_ENV: test
+          DB_HOST: 127.0.0.1
+          DB_USERNAME: 'root'
+          DB_PASSWORD: ''
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.1/circleci-images/
+      - image: circleci/mysql:5.6
+
+    working_directory: ~/money_book
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "Gemfile.lock" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run:
+          name: install dependencies
+          command: |
+            bundle install --jobs=4 --retry=3 --path vendor/bundle
+
+      - save_cache:
+          paths:
+            - ./vendor/bundle
+          key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+
+      - run:
+          name: Wait for DB
+          command: dockerize -wait tcp://127.0.0.1:3306 -timeout 120s
+
+      # Database setup
+      - run: mv config/database.yml.ci config/database.yml
+
+      - run: bundle exec rake db:create
+      - run: bundle exec rake db:schema:load
+
+      # # Rspec test
+      - run:
+          name: Rspec
+          command: |
+            bundle exec rspec --format RspecJunitFormatter \
+                              --out test_results/rspec.xml \
+                              --format documentation \
+                              $(circleci tests glob "spec/{controllers,forms,models,services}/**/*_spec.rb" | circleci tests split)
+
+
+      - add_ssh_keys:
+        fingerprints:
+          - "1d:f2:af:ac:ee:c6:61:cf:51:04:7e:9c:0c:8b:89:a0"
+
+      - deploy:
+          name: Capistrano deploy
+          command:
+  　　　　　  bundle exec cap production deploy
