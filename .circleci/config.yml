@@ -49,13 +49,13 @@ jobs:
       - run: bundle exec rake db:schema:load
 
       # # Rspec test
-      - run:
-          name: Rspec
-          command: |
-            bundle exec rspec --format RspecJunitFormatter \
-                              --out test_results/rspec.xml \
-                              --format documentation \
-                              $(circleci tests glob "spec/{controllers,forms,models,services}/**/*_spec.rb" | circleci tests split)
+      # - run:
+      #     name: Rspec
+      #     command: |
+      #       bundle exec rspec --format RspecJunitFormatter \
+      #                         --out test_results/rspec.xml \
+      #                         --format documentation \
+      #                         $(circleci tests glob "spec/{controllers,forms,models,services}/**/*_spec.rb" | circleci tests split)
 
 
       - add_ssh_keys:
