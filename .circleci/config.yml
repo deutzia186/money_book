@@ -1,6 +1,19 @@
 version: 2.1
+
+executors:
+  aws-cli:
+    environment:
+      AWS_DEFAULT_REGION: ap-northeast-1
+      AWS_PAGER: ""
+  docker:
+    image: amazon/aws-cli
+
 jobs:
   build:
+    executor: aws-cli
+    steps:
+      - aws codebuild start-build --project-name myproject 
+
     docker:
       # specify the version you desire here
       - image: circleci/ruby:2.5.1-node-browsers
