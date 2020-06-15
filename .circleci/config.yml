@@ -10,10 +10,6 @@ executors:
 
 jobs:
   build:
-    executor: aws-cli
-    steps:
-      - aws codebuild start-build --project-name myproject 
-
     docker:
       # specify the version you desire here
       - image: circleci/ruby:2.5.1-node-browsers
