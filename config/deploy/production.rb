@@ -68,5 +68,3 @@ set :ssh_options, {
   forward_agent: true,  
   auth_methods: %w[publickey],  
 }  
-set :rails_env, "production"
-set :unicorn_rack_env, "production"
