@@ -50,5 +50,7 @@ test:
 #
 production:
   <<: *default
-  database: money_book_production
-  socket: /var/lib/mysql/mysql.sock
+  adapter: mysql2
+  charset: utf8
+  encoding: utf8
+  pool: 5
