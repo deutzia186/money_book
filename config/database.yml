@@ -51,7 +51,5 @@ test:
 production:
   <<: *default
   adapter: mysql2
-  charset: utf8
-  encoding: utf8
   pool: 5
   password: ENV['MYSQL_PASSWORD']
