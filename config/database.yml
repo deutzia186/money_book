@@ -52,3 +52,4 @@ production:
   <<: *default
   adapter: mysql2
   host: <%= ENV.fetch('DB_HOST') %>
+  
