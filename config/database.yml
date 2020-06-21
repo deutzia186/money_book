@@ -16,7 +16,6 @@ default: &default
   username: root
   password: password
   host: db
-  socket: /tmp/mysql.sock
 
 development:
   <<: *default
@@ -28,6 +27,7 @@ development:
 test:
   <<: *default
   database: money_book_test
+  host: <%= ENV.fetch("MYSQL_HOST") { "db" } %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -54,7 +54,6 @@ production:
   pool: 5
   charset: utf8mb4
   encoding: utf8mb4
-  socket: /var/lib/mysql/mysql.sock
   host:     <%= Rails.application.credentials.db[:host] %>
   database: <%= Rails.application.credentials.db[:database] %>
   username: <%= Rails.application.credentials.db[:username] %>
