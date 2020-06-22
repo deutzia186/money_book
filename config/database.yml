@@ -52,5 +52,5 @@ production:
   <<: *default
   adapter: mysql2
   host: <%= ENV.fetch("DB_HOST") { "localhost" } %>
-  username: root
-  password: <%= ENV.fetch("DB_PASSWORD") { '' } %>
+  # username: root
+  # password: <%= ENV.fetch("DB_PASSWORD") { '' } %>
