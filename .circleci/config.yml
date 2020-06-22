@@ -17,7 +17,7 @@ jobs:
       - image: circleci/mysql:5.6
         environment:
           DB_USERNAME: root
-          # MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
+          DB_PASSWORD: ""
 
     working_directory: ~/money_book
 
