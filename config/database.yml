@@ -29,7 +29,7 @@ test:
   <<: *default
   database: money_book_test
   username: root
-  password: ""
+  password: <%= ENV.fetch("MYSQL_PASSWORD") { "password" } %>
   host: <%= ENV.fetch("MYSQL_HOST") { "db" } %>
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
