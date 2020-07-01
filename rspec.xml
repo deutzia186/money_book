@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="0" skipped="0" failures="0" errors="0" time="0.000051" timestamp="2020-07-01T17:59:25+09:00" hostname="TakayukinoMacBook-Pro.local">
+<testsuite name="rspec" tests="1" skipped="0" failures="1" errors="0" time="0.033916" timestamp="2020-07-01T18:51:32+09:00" hostname="TakayukinoMacBook-Pro.local">
 <properties>
-<property name="seed" value="51963"/>
+<property name="seed" value="22514"/>
 </properties>
+<testcase classname="spec.models.book_spec" name="Book date,category,town,priceがそれぞれ空の場合無効です。" file="./spec/models/book_spec.rb" time="0.032193"><failure message="Category(#70226902344060) expected, got &quot;食費&quot; which is an instance of String(#70226809331220)" type="ActiveRecord::AssociationTypeMismatch">Failure/Error: book = Book.new(date:&quot;&quot;, category:&quot;食費&quot;, price:&quot;1000&quot;)
+
+ActiveRecord::AssociationTypeMismatch:
+  Category(#70226902344060) expected, got &quot;食費&quot; which is an instance of String(#70226809331220)
+./spec/models/book_spec.rb:5:in `block (2 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
 </testsuite>

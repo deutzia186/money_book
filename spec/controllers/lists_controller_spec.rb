@@ -1,5 +1,4 @@
-# require 'rails_helper'
+require 'rails_helper'
 
-# RSpec.describe ListsController, type: :controller do
-
-# end
+RSpec.describe ListsController, type: :controller do
+end
