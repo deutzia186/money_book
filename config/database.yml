@@ -52,4 +52,4 @@ production:
   adapter: mysql2
   # host: <%= ENV.fetch("MYSQL_HOST") { "db" } %>
   username: <%= Rails.application.credentials.database[:user_name] %>
-  password: <%=Rails.application.credentials.database[:user_password] %>
+  password: <%= Rails.application.credentials.database[:user_password] %>
