@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="0" skipped="0" failures="0" errors="0" time="0.000057" timestamp="2020-06-12T19:30:25+09:00" hostname="TakayukinoMacBook-Pro.local">
+<testsuite name="rspec" tests="3" skipped="3" failures="0" errors="0" time="0.001855" timestamp="2020-07-01T17:44:14+09:00" hostname="TakayukinoMacBook-Pro.local">
 <properties>
-<property name="seed" value="20424"/>
+<property name="seed" value="13610"/>
 </properties>
+<testcase classname="spec.views.bookmarks.create" name="bookmarks/create.html.haml add some examples to (or delete) /Users/utsukitakayuki/projects/money_book/spec/views/bookmarks/create.html.haml_spec.rb" file="./spec/views/bookmarks/create.html.haml_spec.rb" time="0.000012"><skipped/></testcase>
+<testcase classname="spec.views.bookmarks.destroy" name="bookmarks/destroy.html.haml add some examples to (or delete) /Users/utsukitakayuki/projects/money_book/spec/views/bookmarks/destroy.html.haml_spec.rb" file="./spec/views/bookmarks/destroy.html.haml_spec.rb" time="0.000004"><skipped/></testcase>
+<testcase classname="spec.views.books.index" name="books/index.html.haml add some examples to (or delete) /Users/utsukitakayuki/projects/money_book/spec/views/books/index.html.haml_spec.rb" file="./spec/views/books/index.html.haml_spec.rb" time="0.000003"><skipped/></testcase>
 </testsuite>
