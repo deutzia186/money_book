@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="4" skipped="0" failures="1" errors="0" time="0.183042" timestamp="2020-07-01T20:53:04+09:00" hostname="TakayukinoMacBook-Pro.local">
+<testsuite name="rspec" tests="10" skipped="0" failures="0" errors="0" time="0.163123" timestamp="2020-07-02T18:20:27+09:00" hostname="TakayukinoMacBook-Pro.local">
 <properties>
-<property name="seed" value="30566"/>
+<property name="seed" value="42047"/>
 </properties>
-<testcase classname="spec.models.book_spec" name="Book dateがなければ無効であることを確認" file="./spec/models/book_spec.rb" time="0.158084"></testcase>
-<testcase classname="spec.models.book_spec" name="Book category_idがなければ無効であることを確認" file="./spec/models/book_spec.rb" time="0.002864"></testcase>
-<testcase classname="spec.models.book_spec" name="Book priceがなければ無効であることを確認" file="./spec/models/book_spec.rb" time="0.003154"></testcase>
-<testcase classname="spec.models.book_spec" name="Book memo,imageがなくても有効であることを確認" file="./spec/models/book_spec.rb" time="0.016825"><failure message="expected #&lt;Book id: nil, select: nil, category_id: 1, date: &quot;2020-05-31 06:00:00&quot;, price: 1000, image: nil, memo: &quot;&quot;, user_id: 1, created_at: nil, updated_at: nil&gt; to be valid, but got errors: Userを入力してください, Categoryを入力してください" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect(book).to be_valid
-  expected #&lt;Book id: nil, select: nil, category_id: 1, date: &quot;2020-05-31 06:00:00&quot;, price: 1000, image: nil, memo: &quot;&quot;, user_id: 1, created_at: nil, updated_at: nil&gt; to be valid, but got errors: Userを入力してください, Categoryを入力してください
-./spec/models/book_spec.rb:24:in `block (2 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.models.book_spec" name="Book date,price,user_id,category_idがあれば有効であること" file="./spec/models/book_spec.rb" time="0.057450"></testcase>
+<testcase classname="spec.models.book_spec" name="Book dateがなければ無効であること" file="./spec/models/book_spec.rb" time="0.072662"></testcase>
+<testcase classname="spec.models.book_spec" name="Book priceがなければ無効であること" file="./spec/models/book_spec.rb" time="0.003740"></testcase>
+<testcase classname="spec.models.user_spec" name="User nameとemail、passwordとpassword_confirmationが存在すれば登録できること" file="./spec/models/user_spec.rb" time="0.003617"></testcase>
+<testcase classname="spec.models.user_spec" name="User nameがない場合は登録できないこと" file="./spec/models/user_spec.rb" time="0.003935"></testcase>
+<testcase classname="spec.models.user_spec" name="User emailがない場合は登録できないこと" file="./spec/models/user_spec.rb" time="0.002955"></testcase>
+<testcase classname="spec.models.user_spec" name="User passwordがない場合は登録できないこと" file="./spec/models/user_spec.rb" time="0.002985"></testcase>
+<testcase classname="spec.models.user_spec" name="User passwordが存在してもpassword_confirmationがない場合は登録できないこと" file="./spec/models/user_spec.rb" time="0.003406"></testcase>
+<testcase classname="spec.models.user_spec" name="User  重複したemailが存在する場合は登録できないこと " file="./spec/models/user_spec.rb" time="0.006363"></testcase>
+<testcase classname="spec.models.user_spec" name="User  passwordが5文字以下であれば登録できないこと " file="./spec/models/user_spec.rb" time="0.003324"></testcase>
 </testsuite>
