@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="1" skipped="0" failures="1" errors="0" time="0.033916" timestamp="2020-07-01T18:51:32+09:00" hostname="TakayukinoMacBook-Pro.local">
+<testsuite name="rspec" tests="4" skipped="0" failures="1" errors="0" time="0.183042" timestamp="2020-07-01T20:53:04+09:00" hostname="TakayukinoMacBook-Pro.local">
 <properties>
-<property name="seed" value="22514"/>
+<property name="seed" value="30566"/>
 </properties>
-<testcase classname="spec.models.book_spec" name="Book date,category,town,priceがそれぞれ空の場合無効です。" file="./spec/models/book_spec.rb" time="0.032193"><failure message="Category(#70226902344060) expected, got &quot;食費&quot; which is an instance of String(#70226809331220)" type="ActiveRecord::AssociationTypeMismatch">Failure/Error: book = Book.new(date:&quot;&quot;, category:&quot;食費&quot;, price:&quot;1000&quot;)
-
-ActiveRecord::AssociationTypeMismatch:
-  Category(#70226902344060) expected, got &quot;食費&quot; which is an instance of String(#70226809331220)
-./spec/models/book_spec.rb:5:in `block (2 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.models.book_spec" name="Book dateがなければ無効であることを確認" file="./spec/models/book_spec.rb" time="0.158084"></testcase>
+<testcase classname="spec.models.book_spec" name="Book category_idがなければ無効であることを確認" file="./spec/models/book_spec.rb" time="0.002864"></testcase>
+<testcase classname="spec.models.book_spec" name="Book priceがなければ無効であることを確認" file="./spec/models/book_spec.rb" time="0.003154"></testcase>
+<testcase classname="spec.models.book_spec" name="Book memo,imageがなくても有効であることを確認" file="./spec/models/book_spec.rb" time="0.016825"><failure message="expected #&lt;Book id: nil, select: nil, category_id: 1, date: &quot;2020-05-31 06:00:00&quot;, price: 1000, image: nil, memo: &quot;&quot;, user_id: 1, created_at: nil, updated_at: nil&gt; to be valid, but got errors: Userを入力してください, Categoryを入力してください" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect(book).to be_valid
+  expected #&lt;Book id: nil, select: nil, category_id: 1, date: &quot;2020-05-31 06:00:00&quot;, price: 1000, image: nil, memo: &quot;&quot;, user_id: 1, created_at: nil, updated_at: nil&gt; to be valid, but got errors: Userを入力してください, Categoryを入力してください
+./spec/models/book_spec.rb:24:in `block (2 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
 </testsuite>
