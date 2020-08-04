@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="10" skipped="0" failures="0" errors="0" time="0.163123" timestamp="2020-07-02T18:20:27+09:00" hostname="TakayukinoMacBook-Pro.local">
+<testsuite name="rspec" tests="4" skipped="0" failures="1" errors="0" time="0.283051" timestamp="2020-08-03T19:00:06+09:00" hostname="TakayukinoMacBook-Pro.local">
 <properties>
-<property name="seed" value="42047"/>
+<property name="seed" value="24210"/>
 </properties>
-<testcase classname="spec.models.book_spec" name="Book date,price,user_id,category_idがあれば有効であること" file="./spec/models/book_spec.rb" time="0.057450"></testcase>
-<testcase classname="spec.models.book_spec" name="Book dateがなければ無効であること" file="./spec/models/book_spec.rb" time="0.072662"></testcase>
-<testcase classname="spec.models.book_spec" name="Book priceがなければ無効であること" file="./spec/models/book_spec.rb" time="0.003740"></testcase>
-<testcase classname="spec.models.user_spec" name="User nameとemail、passwordとpassword_confirmationが存在すれば登録できること" file="./spec/models/user_spec.rb" time="0.003617"></testcase>
-<testcase classname="spec.models.user_spec" name="User nameがない場合は登録できないこと" file="./spec/models/user_spec.rb" time="0.003935"></testcase>
-<testcase classname="spec.models.user_spec" name="User emailがない場合は登録できないこと" file="./spec/models/user_spec.rb" time="0.002955"></testcase>
-<testcase classname="spec.models.user_spec" name="User passwordがない場合は登録できないこと" file="./spec/models/user_spec.rb" time="0.002985"></testcase>
-<testcase classname="spec.models.user_spec" name="User passwordが存在してもpassword_confirmationがない場合は登録できないこと" file="./spec/models/user_spec.rb" time="0.003406"></testcase>
-<testcase classname="spec.models.user_spec" name="User  重複したemailが存在する場合は登録できないこと " file="./spec/models/user_spec.rb" time="0.006363"></testcase>
-<testcase classname="spec.models.user_spec" name="User  passwordが5文字以下であれば登録できないこと " file="./spec/models/user_spec.rb" time="0.003324"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController GET #new new.html.hamlに遷移すること" file="./spec/controllers/books_controller_spec.rb" time="0.038082"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController POST #create ログインしている場合 保存に成功した場合 bookを保存すること" file="./spec/controllers/books_controller_spec.rb" time="0.217879"><failure message="expected `Book.count` to have changed by 1, but was changed by 0" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect{ subject }.to change(Book, :count).by(1)
+  expected `Book.count` to have changed by 1, but was changed by 0
+./spec/controllers/books_controller_spec.rb:29:in `block (5 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController GET #edit @bookに正しい値が入っていること" file="./spec/controllers/books_controller_spec.rb" time="0.015806"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController GET #edit edit.htmal.hamlに遷移すること" file="./spec/controllers/books_controller_spec.rb" time="0.009251"></testcase>
 </testsuite>
