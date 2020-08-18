@@ -19,52 +19,29 @@ jobs:
 
     steps:
       - checkout
+      - run:
+          name: install dependencies
+          command: |
+            bundle install --jobs=4 --retry=3 --path vendor/bundle
 
-      # gem関連
-      # - restore_cache:
-      #   keys:
-      #     - my-app-bundle-v1-{{ checksum "Gemfile.lock" }}
-      #     - my-app-bundle-v1-
-        
-      # - run:
-      #   name: Bundlerをinstall
-      #   command: |
-      #     gem update --system
-      #     gem install bundler
+      - save_cache:
+          paths:
+            - ./vendor/bundle
+          key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
-      # - run:
-      #     name: Bundle Install
-      #     command: bundle check || bundle install
-
-      # - save_cache:
-      #     paths:
-      #       - ./vendor/bundle
-      #     key: v1-dependencies-{{ checksum "Gemfile.lock" }}
-
-      # # yarn関連
-      # - restore_cache:
-      #   keys:
-      #     - rails-demo-yarn-{{ checksum "yarn.lock" }}
-      #     - rails-demo-yarn-
-
-      # - run:
-      #     name: Yarnをinstall
-      #     command: yarn install --cache-folder ~/.cache/yarn
-
-      # DB関連
       - run:
           name: Wait for DB
           command: dockerize -wait tcp://127.0.0.1:3306 -timeout 120s
 
+
       - run: bundle exec rake db:create
       - run: bundle exec rake db:schema:load
 
-      # Rspec関連
       - run:
         name: Rspec
         command: bundle exec rspec
 
-      #デプロイ関連
+
       - add_ssh_keys:
           fingerprints:
             - "1d:f2:af:ac:ee:c6:61:cf:51:04:7e:9c:0c:8b:89:a0"
