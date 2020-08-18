@@ -3,7 +3,7 @@ class Book < ApplicationRecord
   has_many   :bookmarks
   belongs_to :category
 
-  validates :date, :category, :price, presence: true
+  validates :date, :price, presence: true
 
   def bookmark_by?(user)
     bookmarks.where(user_id: user.id).exists?
