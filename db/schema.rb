@@ -13,8 +13,8 @@
 ActiveRecord::Schema.define(version: 2020_05_17_055901) do
 
   create_table "bookmarks", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.bigint "book_id", null: false
+    t.bigint "user_id"
+    t.bigint "book_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["book_id"], name: "index_bookmarks_on_book_id"
@@ -24,12 +24,12 @@ ActiveRecord::Schema.define(version: 2020_05_17_055901) do
 
   create_table "books", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "select"
-    t.bigint "category_id", null: false
+    t.bigint "category_id"
     t.datetime "date", null: false
     t.integer "price", null: false
     t.string "image"
     t.text "memo"
-    t.bigint "user_id", null: false
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["category_id"], name: "index_books_on_category_id"

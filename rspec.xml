@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="4" skipped="0" failures="1" errors="0" time="0.283051" timestamp="2020-08-03T19:00:06+09:00" hostname="TakayukinoMacBook-Pro.local">
+<testsuite name="rspec" tests="25" skipped="0" failures="0" errors="0" time="0.681646" timestamp="2020-08-18T16:08:39+09:00" hostname="TakayukinoMacBook-Pro.local">
 <properties>
-<property name="seed" value="24210"/>
+<property name="seed" value="2318"/>
 </properties>
-<testcase classname="spec.controllers.books_controller_spec" name="BooksController GET #new new.html.hamlに遷移すること" file="./spec/controllers/books_controller_spec.rb" time="0.038082"></testcase>
-<testcase classname="spec.controllers.books_controller_spec" name="BooksController POST #create ログインしている場合 保存に成功した場合 bookを保存すること" file="./spec/controllers/books_controller_spec.rb" time="0.217879"><failure message="expected `Book.count` to have changed by 1, but was changed by 0" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect{ subject }.to change(Book, :count).by(1)
-  expected `Book.count` to have changed by 1, but was changed by 0
-./spec/controllers/books_controller_spec.rb:29:in `block (5 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
-<testcase classname="spec.controllers.books_controller_spec" name="BooksController GET #edit @bookに正しい値が入っていること" file="./spec/controllers/books_controller_spec.rb" time="0.015806"></testcase>
-<testcase classname="spec.controllers.books_controller_spec" name="BooksController GET #edit edit.htmal.hamlに遷移すること" file="./spec/controllers/books_controller_spec.rb" time="0.009251"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController GET #new new.html.hamlに遷移すること" file="./spec/controllers/books_controller_spec.rb" time="0.410999"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController POST #create ログインができた場合 保存に成功した場合 bookを保存すること" file="./spec/controllers/books_controller_spec.rb" time="0.033420"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController POST #create ログインができた場合 保存に成功した場合 明細一覧ページに遷移すること" file="./spec/controllers/books_controller_spec.rb" time="0.018060"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController POST #create ログインができた場合 保存に失敗した場合 bookが保存されないこと" file="./spec/controllers/books_controller_spec.rb" time="0.011127"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController POST #create ログインができた場合 保存に失敗した場合 トップページに遷移すること" file="./spec/controllers/books_controller_spec.rb" time="0.010687"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController POST #create ログインができなかった場合 ユーザー登録ページに遷移すること" file="./spec/controllers/books_controller_spec.rb" time="0.007467"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController GET #edit 権限のあるユーザーでログインしている場合 @bookに正しい値が入っていること" file="./spec/controllers/books_controller_spec.rb" time="0.023847"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController GET #edit 権限のあるユーザーでログインしている場合 edit.htmal.hamlに遷移すること" file="./spec/controllers/books_controller_spec.rb" time="0.011080"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController GET #edit 権限のないユーザーでログインしている場合 ログインしているユーザーの明細一覧へ遷移すること" file="./spec/controllers/books_controller_spec.rb" time="0.015649"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController PATCH #update 正常にbookを更新できること" file="./spec/controllers/books_controller_spec.rb" time="0.020791"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController PATCH #update bookを更新した後、book一覧ページに遷移できること" file="./spec/controllers/books_controller_spec.rb" time="0.016380"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController PATCH #update 不正なアトリビュートであると更新できなくなっていること" file="./spec/controllers/books_controller_spec.rb" time="0.017767"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController PATCH #update 不正なアトリビュートであると再度更新ページにリダイレクトされること" file="./spec/controllers/books_controller_spec.rb" time="0.016764"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController DELETE #destroy 権限のあるユーザーでログインしている場合 bookが削除されること" file="./spec/controllers/books_controller_spec.rb" time="0.010738"></testcase>
+<testcase classname="spec.controllers.books_controller_spec" name="BooksController DELETE #destroy 権限のあるユーザーでログインしている場合 削除後、詳細一覧ページにリダイレクトされること" file="./spec/controllers/books_controller_spec.rb" time="0.009912"></testcase>
+<testcase classname="spec.models.book_spec" name="Book date,price,user_id,category_idがあれば有効であること" file="./spec/models/book_spec.rb" time="0.007712"></testcase>
+<testcase classname="spec.models.book_spec" name="Book dateがなければ無効であること" file="./spec/models/book_spec.rb" time="0.003737"></testcase>
+<testcase classname="spec.models.book_spec" name="Book priceがなければ無効であること" file="./spec/models/book_spec.rb" time="0.003034"></testcase>
+<testcase classname="spec.models.user_spec" name="User nameとemail、passwordとpassword_confirmationが存在すれば登録できること" file="./spec/models/user_spec.rb" time="0.002967"></testcase>
+<testcase classname="spec.models.user_spec" name="User nameがない場合は登録できないこと" file="./spec/models/user_spec.rb" time="0.003290"></testcase>
+<testcase classname="spec.models.user_spec" name="User emailがない場合は登録できないこと" file="./spec/models/user_spec.rb" time="0.003125"></testcase>
+<testcase classname="spec.models.user_spec" name="User passwordがない場合は登録できないこと" file="./spec/models/user_spec.rb" time="0.003013"></testcase>
+<testcase classname="spec.models.user_spec" name="User passwordが存在してもpassword_confirmationがない場合は登録できないこと" file="./spec/models/user_spec.rb" time="0.003452"></testcase>
+<testcase classname="spec.models.user_spec" name="User  重複したemailが存在する場合は登録できないこと " file="./spec/models/user_spec.rb" time="0.006481"></testcase>
+<testcase classname="spec.models.user_spec" name="User  passwordが5文字以下であれば登録できないこと " file="./spec/models/user_spec.rb" time="0.003505"></testcase>
 </testsuite>

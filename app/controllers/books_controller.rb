@@ -46,12 +46,20 @@ class BooksController < ApplicationController
 
   def edit
     @book = Book.find(params[:id])
+    if @book.user == current_user
+      render "edit"
+    else
+      redirect_to lists_path, alert: '編集できません'
+    end
   end
 
   def update
     @book = Book.find(params[:id])
-    @book.update(book_params)
-    redirect_to lists_path
+    if @book.update(book_params)
+      redirect_to lists_path
+    else
+      redirect_to edit_book_path, alert: '更新できませんでした'
+    end
   end
 
   def destroy
