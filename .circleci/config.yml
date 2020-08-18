@@ -21,35 +21,35 @@ jobs:
       - checkout
 
       # gem関連
-      - restore_cache:
-        keys:
-          - my-app-bundle-v1-{{ checksum "Gemfile.lock" }}
-          - my-app-bundle-v1-
+      # - restore_cache:
+      #   keys:
+      #     - my-app-bundle-v1-{{ checksum "Gemfile.lock" }}
+      #     - my-app-bundle-v1-
         
-      - run:
-        name: Bundlerをinstall
-        command: |
-          gem update --system
-          gem install bundler
+      # - run:
+      #   name: Bundlerをinstall
+      #   command: |
+      #     gem update --system
+      #     gem install bundler
 
-      - run:
-          name: Bundle Install
-          command: bundle check || bundle install
+      # - run:
+      #     name: Bundle Install
+      #     command: bundle check || bundle install
 
-      - save_cache:
-          paths:
-            - ./vendor/bundle
-          key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+      # - save_cache:
+      #     paths:
+      #       - ./vendor/bundle
+      #     key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
-      # yarn関連
-      - restore_cache:
-        keys:
-          - rails-demo-yarn-{{ checksum "yarn.lock" }}
-          - rails-demo-yarn-
+      # # yarn関連
+      # - restore_cache:
+      #   keys:
+      #     - rails-demo-yarn-{{ checksum "yarn.lock" }}
+      #     - rails-demo-yarn-
 
-      - run:
-          name: Yarnをinstall
-          command: yarn install --cache-folder ~/.cache/yarn
+      # - run:
+      #     name: Yarnをinstall
+      #     command: yarn install --cache-folder ~/.cache/yarn
 
       # DB関連
       - run:
