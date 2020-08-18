@@ -22,8 +22,6 @@ jobs:
 
     steps:
       - checkout
-
-      # gem関連
       - restore_cache:
         keys:
           - my-app-bundle-v1-{{ checksum "Gemfile.lock" }}
@@ -44,7 +42,6 @@ jobs:
             - ./vendor/bundle
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
-      # yarn関連
       - restore_cache:
         keys:
           - rails-demo-yarn-{{ checksum "yarn.lock" }}
