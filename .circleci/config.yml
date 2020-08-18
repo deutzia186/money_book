@@ -22,35 +22,15 @@ jobs:
 
     steps:
       - checkout
-      - restore_cache:
-        keys:
-          - my-app-bundle-v1-{{ checksum "Gemfile.lock" }}
-          - my-app-bundle-v1-
-        
       - run:
-        name: Bundlerをinstall
-        command: |
-          gem update --system
-          gem install bundler
-
-      - run:
-          name: Bundle Install
-          command: bundle check || bundle install
+          name: install dependencies
+          command: |
+            bundle install --jobs=4 --retry=3 --path vendor/bundle
 
       - save_cache:
           paths:
             - ./vendor/bundle
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
-
-      - restore_cache:
-        keys:
-          - rails-demo-yarn-{{ checksum "yarn.lock" }}
-          - rails-demo-yarn-
-
-      - run:
-          name: Yarnをinstall
-          command: yarn install --cache-folder ~/.cache/yarn
-
 
       - run:
           name: Wait for DB
