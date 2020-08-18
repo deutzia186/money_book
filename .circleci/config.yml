@@ -5,11 +5,14 @@ orbs:
 jobs:
   build:
     docker:
+      # specify the version you desire here
       - image: circleci/ruby:2.5.1-node-browsers
         environment:
           RAILS_ENV: test
           MYSQL_HOST: 127.0.0.1
-
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.1/circleci-images/
       - image: mysql:5.6.47
         environment:
           MYSQL_DATABASE: money_book_test
@@ -37,9 +40,7 @@ jobs:
       - run: bundle exec rake db:create
       - run: bundle exec rake db:schema:load
 
-      - run:
-        name: Rspec
-        command: bundle exec rspec
+
 
 
       - add_ssh_keys:
