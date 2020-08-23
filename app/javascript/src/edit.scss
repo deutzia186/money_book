@@ -44,7 +44,6 @@
         padding-left: 50px;
         padding-right: 50px;
         border-radius: 6px;
-
       }
       &__detail {
         text-align: center;
@@ -71,6 +70,7 @@
         border-left: none;
         width: 300px;
         background-color: white;
+        border-radius: 6px;
       }
     }
 
@@ -125,10 +125,10 @@
         padding-right: 50px;
         border-radius: 6px;
       }
-      
       #img_field-expense {
         border: 1px solid #bbb;
         padding: 0;
+        line-height: 50px;
         cursor: pointer;
         width: 300px;
         transition: 0.3s ease-out;
@@ -138,7 +138,6 @@
       #img_field-expense i {
         font-size: 20px;
         color: #aaa;
-        line-height: 50px;
         transition: 0.3s ease-out;
       }       
       #img_field-expense i.add {
@@ -166,6 +165,7 @@
         width: 300px;
         transition: 0.3s ease-out;
         border-left: none;
+        border-radius: 6px;
       }
       #img_field-income i {
         font-size: 20px;
@@ -191,10 +191,9 @@
         color: #fff;
       }
     }
-    .checkbox {
-      padding-left: 100px;
-    }
-
+    // .checkbox {
+    //   padding-left: 100px;
+    // }
 
     .register {
       margin-top: 20px;
