@@ -2,8 +2,7 @@
 
 # Money Book
 Ruby on Railsを用いた家計簿アプリケーション
-
-[MoneyBook.pdf](https://github.com/deutzia186/money_book/files/5113665/MoneyBook.pdf)
+![MoneyBook](https://user-images.githubusercontent.com/59218383/91018152-2f9c2a80-e62a-11ea-9d31-0765b1b1a5aa.jpg)
 
 ## リンク
 http://54.178.112.22/
