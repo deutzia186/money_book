@@ -2,7 +2,9 @@
 
 # Money Book
 Ruby on Railsを用いた家計簿アプリケーション
-![MoneyBook](https://user-images.githubusercontent.com/59218383/91018152-2f9c2a80-e62a-11ea-9d31-0765b1b1a5aa.jpg)
+
+## イメージ
+![moneybook](https://user-images.githubusercontent.com/59218383/91020550-8c4d1480-e62d-11ea-8852-64e909129503.jpg)
 
 ## リンク
 http://54.178.112.22/
