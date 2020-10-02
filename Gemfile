@@ -82,6 +82,7 @@ gem 'omniauth-google-oauth2'
 gem "chartkick"
 gem 'chartable'
 gem "simple_calendar", "~> 2.0"
+gem "actionview", ">= 6.0.3.3"
 group :production do
   gem 'unicorn', '5.4.1'
 end
